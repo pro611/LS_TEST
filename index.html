@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d0d0d" />
+    <meta name="description" content="LS ELECTRIC E.ON 웹진, 남다른 안목" />
+    <title>E.ON WEBZINE | 남다른 안목</title>
+    <link rel="icon" href="./assets/eon-logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="brand" href="#hero" aria-label="E.ON 웹진 홈">
+        <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+        <span lang="en">WEBZINE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
+        <a href="#theme">Theme. On</a>
+        <a href="#company">Company. On</a>
+        <a href="#culture">Culture. On</a>
+        <a href="#news">LS NEWS+</a>
+        <a href="#event-popup" aria-haspopup="dialog" aria-controls="event-popup" data-event-open>EVENT</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-button notification-button" href="#news" aria-label="새 소식 보기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+          </svg>
+          <span class="notification-dot" aria-hidden="true"></span>
+        </a>
+        <button class="icon-button search-button" type="button" aria-label="검색" aria-haspopup="dialog" data-search-open>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="7.3" />
+            <path d="m16.2 16.2 5 5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="search-dialog" aria-labelledby="search-heading" data-search>
+      <div class="search-dialog__header">
+        <h2 id="search-heading">웹진 검색</h2>
+        <form method="dialog"><button type="submit">닫기</button></form>
+      </div>
+      <label class="visually-hidden" for="search-query">콘텐츠 제목</label>
+      <input id="search-query" type="search" placeholder="콘텐츠 제목을 검색하세요" autocomplete="off" autofocus />
+      <ul class="search-results" data-search-results></ul>
+      <p class="search-empty" role="status" hidden data-search-empty>검색 결과가 없습니다.</p>
+    </dialog>
+
+    <button class="event-tab event-tab--trigger" type="button" aria-label="이벤트 열기" aria-haspopup="dialog" aria-controls="event-popup" data-event-open><span>EVENT</span></button>
+    <dialog class="event-dialog" id="event-popup" aria-labelledby="event-popup-title" data-event-popup>
+      <div class="event-drawer">
+        <section class="event-panel" aria-labelledby="event-popup-title">
+          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus>
+            <span></span>
+            <span></span>
+          </button>
+          <h2 class="visually-hidden" id="event-popup-title">AI 동료 밸런스</h2>
+          <p class="visually-hidden">AI에게 말할 때, 나는? 반말파 VS 존댓말파</p>
+          <div class="event-poll__choices" role="group" aria-label="말투 선택">
+            <button class="event-poll__choice" type="button" aria-pressed="false" data-poll-choice>
+              <span class="event-poll__badge">A. 반말파</span>
+              <strong>“이거 세 줄로 정리해줘.”</strong>
+              <span class="event-poll__description">친해졌는데 굳이 존댓말까지?</span>
+            </button>
+            <button class="event-poll__choice" type="button" aria-pressed="false" data-poll-choice>
+              <span class="event-poll__badge event-poll__badge--formal">B. 존댓말파</span>
+              <strong>“이거 세 줄로 정리해 주세요.”</strong>
+              <span class="event-poll__description">AI한테도 예의를 지키는 편이에요.</span>
+            </button>
+          </div>
+          <div class="event-poll__results" aria-label="반말 47퍼센트, 존댓말 53퍼센트. 1,286명 참여 중">
+            <div class="event-poll__result-header" aria-hidden="true">
+              <div class="event-poll__side"><span>반말</span><span class="event-poll__percentage"><span data-poll-count="47" data-poll-informal>0</span>%</span></div>
+              <span class="event-poll__vs">VS</span>
+              <div class="event-poll__side event-poll__side--formal"><span>존댓말</span><span class="event-poll__percentage"><span data-poll-count="53">0</span>%</span></div>
+            </div>
+            <div class="event-poll__gauge" aria-hidden="true"><div class="event-poll__gauge-fill" data-poll-gauge></div></div>
+            <p class="event-poll__participants"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="5" r="4" /><path d="M2 18v-3a8 8 0 0 1 16 0v3c-4 2-12 2-16 0" /></svg><span>1,286명 참여 중</span></p>
+          </div>
+        </section>
+        <button class="event-tab" type="button" aria-label="이벤트 닫기" data-event-close><span>EVENT</span></button>
+      </div>
+    </dialog>
+
+    <main>
+      <section class="scroll-sequence" id="hero" aria-label="E.ON 웹진 메인" data-scroll-sequence>
+        <div class="sequence-stage" data-sequence-stage>
+          <div class="hero" data-hero-layer>
+            <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="./assets/hero-poster.webp" data-hero-video>
+              <source src="./assets/hero-loop.mp4" type="video/mp4" />
+            </video>
+            <div class="hero__shade" aria-hidden="true"></div>
+            <div class="hero__content">
+              <h1 class="visually-hidden">남다른 안목, Discerning Eye</h1>
+              <img class="hero__title" src="./assets/discerning-eye.png" alt="" width="2715" height="517" />
+            </div>
+            <button class="scroll-guide" type="button" aria-label="다음 콘텐츠로 이동" data-scroll-guide>
+              <span class="scroll-guide__mouse" aria-hidden="true"><span class="scroll-guide__wheel"></span></span>
+            </button>
+          </div>
+
+          <section class="vision" aria-labelledby="vision-heading" data-vision>
+            <div class="vision__objects" aria-hidden="true">
+              <img class="vision__object vision__object--ring" src="./assets/glass-ring.png" alt="" width="665" height="567" data-object data-speed="0.115" />
+              <img class="vision__object vision__object--ribbon" src="./assets/glass-ribbon.png" alt="" width="777" height="560" data-object data-speed="0.12" />
+              <img class="vision__object vision__object--back-ring" src="./assets/glass-back-ring.png" alt="" width="382" height="455" data-object data-speed="0.045" />
+              <img class="vision__object vision__object--back-lens" src="./assets/glass-lens.png" alt="" width="288" height="273" data-object data-speed="0.06" />
+            </div>
+            <div class="vision__copy" data-vision-copy>
+              <h2 id="vision-heading" class="vision__heading" aria-label="같은 일상에서도 새로운 가능성을 발견하는 시선">
+                <span class="vision__line" data-fill-line aria-hidden="true">같은 일상에서도</span>
+                <span class="vision__line" data-fill-line aria-hidden="true">새로운 가능성을 발견하는 시선</span>
+              </h2>
+            </div>
+            <div class="vision__copy" data-vision-copy-next>
+              <h2 class="vision__heading" aria-label="LS ELECTRIC과 함께, 익숙한 세상을 새롭게 바라봅니다.">
+                <span class="vision__line" data-fill-line aria-hidden="true">LS ELECTRIC과 함께, 익숙한 세상을</span>
+                <span class="vision__line" data-fill-line aria-hidden="true">새롭게 바라봅니다.</span>
+              </h2>
+            </div>
+          </section>
+
+          <section class="special" id="theme" aria-labelledby="theme-heading" data-special inert>
+            <div class="special__header">
+              <h2 class="section-title" id="theme-heading" lang="en">THEME. <span class="section-title__on">ON</span></h2>
+              <a class="special__more" href="./arc1.html" aria-label="Theme. On 목차 보기"><span aria-hidden="true"></span></a>
+            </div>
+            <div class="special__carousel" role="region" aria-roledescription="캐러셀" aria-label="Theme. On 칼럼" tabindex="0" data-carousel>
+              <div class="special__slides" data-slides></div>
+              <template data-slide-template>
+                <article class="special__card">
+                  <a class="thumbnail" href="./sub1.html" aria-label="남다른 안목 자세히 보기">
+                    <img class="thumbnail__image" src="./assets/theme-discerning.webp" alt="주황색 렌즈가 끼워진 검은 안경" width="970" height="682" draggable="false" />
+                    <div class="thumbnail__overlay">
+                      <strong>AI의 가능성에 인간의 안목을 더하다</strong>
+                      <p>AI가 제안한 여러 가능성 중에서 사람의 경험과 판단이 어떤 차이를 만드는지 살펴봅니다.</p>
+                      <span class="thumbnail__detail">자세히 보기</span>
+                    </div>
+                  </a>
+                  <h3>남다른 안목</h3>
+                </article>
+              </template>
+              <template data-slide-template>
+                <article class="special__card">
+                  <a class="thumbnail" href="./sub2.html" aria-label="AI X파일 자세히 보기">
+                    <img class="thumbnail__image" src="./assets/theme-ai.webp" alt="노트북을 보며 미소 짓는 구성원" width="960" height="675" draggable="false" />
+                    <div class="thumbnail__overlay">
+                      <strong>김 매니저의 실전 AI 활용법</strong>
+                      <p>자료를 정리하고 문장을 다듬는 일에서 AI를 어떻게 활용하는지 소개합니다.</p>
+                      <span class="thumbnail__detail">자세히 보기</span>
+                    </div>
+                  </a>
+                  <h3>AI X파일</h3>
+                </article>
+              </template>
+              <template data-slide-template>
+                <article class="special__card">
+                  <a class="thumbnail" href="./sub3.html" aria-label="1%의 힘 자세히 보기">
+                    <img class="thumbnail__image" src="./assets/theme-perspective.webp" alt="빛이 비치는 콘크리트 계단 위에 놓인 은색 구체들" width="960" height="675" draggable="false" />
+                    <div class="thumbnail__overlay">
+                      <strong>한 끗의 차이를 만드는 시선</strong>
+                      <p>익숙한 대상에서도 남이 지나친 가치를 발견하는 사람들의 이야기를 만나봅니다.</p>
+                      <span class="thumbnail__detail">자세히 보기</span>
+                    </div>
+                  </a>
+                  <h3>1%의 힘</h3>
+                </article>
+              </template>
+              <button class="special__arrow special__arrow--prev" type="button" aria-label="이전 슬라이드" data-slide-prev>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 4-8 8 8 8" /></svg>
+              </button>
+              <button class="special__arrow special__arrow--next" type="button" aria-label="다음 슬라이드" data-slide-next>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 4 8 8-8 8" /></svg>
+              </button>
+              <p class="visually-hidden" aria-live="polite" data-slide-status></p>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="inside" aria-labelledby="company-heading">
+        <div class="inside__inner" id="company">
+          <div class="inside__header">
+            <h2 class="section-title" id="company-heading" lang="en">COMPANY. <span class="section-title__on">ON</span></h2>
+            <a class="special__more inside__more" href="./arc1.html" aria-label="Company. On 목차 보기"><span aria-hidden="true"></span></a>
+          </div>
+          <div class="inside__grid">
+            <article class="inside__card" id="team">
+              <a class="thumbnail inside__thumbnail" href="./sub4.html" aria-label="팀캐를 찾아라! 자세히 보기">
+                <img class="thumbnail__image" src="./assets/company-team.webp" width="808" height="569" alt="야외 계단에 모인 LS ELECTRIC 팀원들" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>서로의 강점이 모여 만드는 팀워크</strong>
+                  <p>다른 역할을 맡은 팀원들이 어떻게 협업하고 문제를 풀어가는지 들어봅니다.</p>
+                  <span class="thumbnail__detail">자세히 보기</span>
+                </div>
+              </a>
+              <h3>팀캐를 찾아라!</h3>
+            </article>
+            <article class="inside__card" id="leader">
+              <a class="thumbnail inside__thumbnail" href="./sub5.html" aria-label="임원이 쏜다 자세히 보기">
+                <img class="thumbnail__image" src="./assets/company-leader.webp" width="808" height="569" alt="동료와 마주 앉아 웃는 임원" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>함께 나누는 간식, 가까워지는 대화</strong>
+                  <p>간식을 함께 먹으며 선배의 경험과 조직 생활에 관한 이야기를 나눕니다.</p>
+                  <span class="thumbnail__detail">자세히 보기</span>
+                </div>
+              </a>
+              <h3>임원이 쏜다</h3>
+            </article>
+            <article class="inside__card" id="heroes">
+              <a class="thumbnail inside__thumbnail" href="./sub6.html" aria-label="히어로즈의 은밀한 출장 자세히 보기">
+                <img class="thumbnail__image" src="./assets/company-heroes.webp" width="808" height="569" alt="공장 앞에 모인 LS 히어로즈 마스코트" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>히어로즈가 출근한 곳은?</strong>
+                  <p>LS의 마스코트 히어로즈를 따라 공장 곳곳을 둘러봅니다.</p>
+                  <span class="thumbnail__detail">자세히 보기</span>
+                </div>
+              </a>
+              <h3>히어로즈의 은밀한 출장</h3>
+            </article>
+            <article class="inside__card" id="comic">
+              <a class="thumbnail inside__thumbnail" href="./sub7.html" aria-label="오싹 주의보 자세히 보기">
+                <img class="thumbnail__image" src="./assets/company-comic.webp" width="808" height="569" alt="크로스 체크를 주제로 한 노란색 오싹 주의보 만화" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>크로스 체크의 저주</strong>
+                  <p>서로 한 번 더 확인하는 일이 왜 중요한지 짧은 직장 만화로 만나봅니다.</p>
+                  <span class="thumbnail__detail">자세히 보기</span>
+                </div>
+              </a>
+              <h3>오싹 주의보</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="inside outside" aria-labelledby="culture-heading">
+        <div class="inside__inner" id="culture">
+          <div class="inside__header">
+            <h2 class="section-title" id="culture-heading" lang="en">CULTURE. <span class="section-title__on">ON</span></h2>
+            <a class="special__more inside__more" href="./arc1.html" aria-label="Culture. On 목차 보기"><span aria-hidden="true"></span></a>
+          </div>
+          <div class="inside__grid">
+            <article class="inside__card" id="event">
+              <div class="thumbnail inside__thumbnail" tabindex="0">
+                <img class="thumbnail__image" src="./assets/culture-quiz.webp" width="808" height="569" alt="도형 캐릭터가 둘러싼 E.ON QUIZ 안내 그림" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>11월의 E.ON 퀴즈</strong>
+                  <p>이번 호를 얼마나 기억하시나요? E.ON 웹진 속 이야기를 퀴즈로 만나봅니다.</p>
+                </div>
+              </div>
+              <h3>11월의 E.ON 퀴즈</h3>
+            </article>
+            <article class="inside__card" id="donation">
+              <div class="thumbnail inside__thumbnail" tabindex="0">
+                <img class="thumbnail__image" src="./assets/culture-donation.webp" width="808" height="569" alt="고향사랑기부제 안내 카드를 건네는 손" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>고향사랑기부제</strong>
+                  <p>지역을 응원하는 기부 방법과 세액공제 혜택을 알아봅니다.</p>
+                </div>
+              </div>
+              <h3>지역경제 살리고 세액공제도 받는 <span>‘고향사랑기부제’</span></h3>
+            </article>
+            <article class="inside__card" id="museum">
+              <div class="thumbnail inside__thumbnail" tabindex="0">
+                <img class="thumbnail__image" src="./assets/culture-museum.webp" width="808" height="569" alt="원형 천장 아래로 보이는 전시 작품" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>전시회와 박물관을 즐기는 법</strong>
+                  <p>이학송 매니저가 전시장을 찾는 이유와 관람의 즐거움을 이야기합니다.</p>
+                </div>
+              </div>
+              <h3>이학송 매니저가 좋아하는 <span>전시회&amp;박물관 관람 이야기</span></h3>
+            </article>
+            <article class="inside__card" id="cards">
+              <div class="thumbnail inside__thumbnail" tabindex="0">
+                <img class="thumbnail__image" src="./assets/culture-cards.webp" width="808" height="569" alt="포켓몬 카드 위에 놓인 몬스터볼" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>포켓몬·디즈니 카드 수집의 매력</strong>
+                  <p>차재훈 매니저가 좋아하는 카드를 모으고 살펴보는 재미를 소개합니다.</p>
+                </div>
+              </div>
+              <h3>차재훈 매니저가 말하는 <span>포켓몬&amp;디즈니 카드 수집의 매력</span></h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="inside news" aria-labelledby="news-heading">
+        <div class="inside__inner" id="news">
+          <div class="inside__header news__header">
+            <h2 class="section-title" id="news-heading"><span lang="en">LS <span class="section-title__accent">NEWS+</span></span><small>우리들의 새로운 소식</small></h2>
+            <a class="special__more inside__more" href="./arc1.html" aria-label="LS NEWS+ 목차 보기"><span aria-hidden="true"></span></a>
+          </div>
+          <div class="news__layout">
+            <div class="thumbnail news__preview" role="tabpanel" tabindex="0" id="news-preview" aria-labelledby="news-tab-1">
+              <div class="news__story is-active" data-news-image>
+                <img class="thumbnail__image" src="./assets/news-hvdc.webp" width="808" height="666" alt="GE버노바와 전압형 HVDC 합작법인 설립 협약식" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>GE버노바와 전압형 HVDC 협력</strong>
+                  <p>LS ELECTRIC과 GE버노바가 전압형 직류송전 사업을 위한 합작법인을 설립합니다.</p>
+                </div>
+              </div>
+              <div class="news__story" data-news-image aria-hidden="true">
+                <img class="thumbnail__image" src="./assets/news-results.webp" width="810" height="667" alt="LS ELECTRIC 사업장 외관" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>100분기 연속 흑자</strong>
+                  <p>사상 최대 실적을 낸 LS ELECTRIC이 100분기 연속 흑자를 이어갔습니다.</p>
+                </div>
+              </div>
+              <div class="news__story" data-news-image aria-hidden="true">
+                <img class="thumbnail__image" src="./assets/news-robot.webp" width="810" height="667" alt="LS ELECTRIC 생산 현장의 4족 보행로봇" loading="lazy" />
+                <div class="thumbnail__overlay">
+                  <strong>보행로봇이 점검하는 생산 현장</strong>
+                  <p>4족 보행로봇을 도입해 생산설비 점검과 안전 관리를 개선합니다.</p>
+                </div>
+              </div>
+            </div>
+            <div class="news__list" role="tablist" aria-label="뉴스 선택" aria-orientation="vertical">
+              <button class="news__item is-active" type="button" role="tab" id="news-tab-1" aria-controls="news-preview" aria-selected="true" data-news-item>
+                <span class="news__item-title">LS ELECTRIC, GE버노바와 전압형 HVDC 합작법인 설립</span>
+                <time datetime="2026-10-07">2026.10.07</time>
+              </button>
+              <button class="news__item" type="button" role="tab" id="news-tab-2" aria-controls="news-preview" aria-selected="false" tabindex="-1" data-news-item>
+                <span class="news__item-title">LS ELECTRIC, 사상 최대 실적으로 100분기 연속 흑자 ‘금자탑’</span>
+                <time datetime="2026-09-21">2026.09.21</time>
+              </button>
+              <button class="news__item" type="button" role="tab" id="news-tab-3" aria-controls="news-preview" aria-selected="false" tabindex="-1" data-news-item>
+                <span class="news__item-title">LS ELECTRIC, 4족 보행로봇으로 스마트팩토리 고도화 나선다</span>
+                <time datetime="2026-09-11">2026.09.11</time>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <button class="back-to-top" type="button" aria-label="맨 위로 이동" data-back-to-top hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 15 7-7 7 7" /></svg>
+      </button>
+    </main>
+
+    <footer class="site-footer" data-footer>
+      <div class="site-footer__top">
+        <div class="site-footer__inner site-footer__top-inner">
+          <a class="site-footer__brand" href="#hero" aria-label="E.ON 웹진 홈">
+            <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+            <span lang="en">LS ELECTRIC WEB MAGAZINE</span>
+          </a>
+          <nav class="site-footer__socials" aria-label="LS ELECTRIC 소셜 미디어">
+            <a href="https://www.linkedin.com/company/lselectric/" aria-label="LS ELECTRIC 링크드인"><img src="./assets/icon-linkedin.png" alt="" width="32" height="33" /></a>
+            <a href="https://www.youtube.com/@LSELECTRIC" aria-label="LS ELECTRIC 유튜브"><img src="./assets/icon-youtube.png" alt="" width="41" height="28" /></a>
+            <a href="https://blog.naver.com/ls-electric" aria-label="LS ELECTRIC 블로그"><img src="./assets/icon-blog.png" alt="" width="43" height="40" /></a>
+            <a href="https://www.instagram.com/lselectric_global/" aria-label="LS ELECTRIC 인스타그램"><img src="./assets/icon-instagram.png" alt="" width="43" height="44" /></a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__inner site-footer__bottom-inner">
+          <a class="site-footer__privacy" href="https://www.ls-electric.com/ko/etc/privacy">개인정보처리방침</a>
+          <p class="site-footer__copyright" lang="en">Copyright © 2021 LS ELECTRIC Co., Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
