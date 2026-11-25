@@ -3,13 +3,241 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="남다른 안목 · LS ELECTRIC E.ON 웹진" />
     <title>남다른 안목 | E.ON WEBZINE</title>
+    <link rel="icon" href="./assets/eon-logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/articles.css" />
+    <script src="./js/header.js" defer></script>
   </head>
-  <body>
-    <main>
-      <h1>남다른 안목</h1>
-      <p>페이지 준비 중입니다.</p>
-      <a href="./index.html">E.ON 웹진 메인으로</a>
+  <body class="article-page article-page--1">
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="E.ON 웹진 홈으로 이동">
+        <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+        <span lang="en">WEBZINE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
+        <a href="./main2.html#theme">Theme. On</a>
+        <a href="./main2.html#company">Company. On</a>
+        <a href="./main2.html#culture">Culture. On</a>
+        <a href="./main2.html#news">LS NEWS+</a>
+        <a href="#event-popup" aria-haspopup="dialog" aria-controls="event-popup" data-event-open>EVENT</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-button notification-button" href="./main2.html#news" aria-label="새 소식 보기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+          </svg>
+          <span class="notification-dot" aria-hidden="true"></span>
+        </a>
+        <button class="icon-button search-button" type="button" aria-label="검색" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="7.3" />
+            <path d="m16.2 16.2 5 5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="event-dialog" id="event-popup" aria-labelledby="event-popup-title" data-event-popup>
+      <div class="event-drawer">
+        <div class="event-panel">
+          <h2 class="visually-hidden" id="event-popup-title">AI 동료 밸런스</h2>
+          <img class="event-panel__image" src="./assets/event-preview.png" width="1593" height="1622" alt="AI에게 말할 때, 나는? 반말파 대 존댓말파. 시안에 표시된 결과는 47% 대 53%이며 참여 인원은 1,286명입니다." />
+          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus></button>
+        </div>
+        <button class="event-tab" type="button" aria-label="이벤트 닫기" data-event-close><span>EVENT</span></button>
+      </div>
+    </dialog>
+
+    <main id="article-top">
+      <article aria-labelledby="article-title">
+        <section class="article-hero article-hero--editorial article-wide">
+          <div class="article-hero__image">
+            <img src="./assets/articles/sub1/hero.webp" width="1476" height="1045" alt="" fetchpriority="high" />
+          </div>
+          <div class="article-hero__inner">
+            <div class="article-hero__eyebrow"><span>남다른 안목</span><span>Theme. On</span></div>
+            <h1 id="article-title">남다른 안목</h1>
+          </div>
+        </section>
+
+        <section class="spark-intro article-split article-wide">
+          <div class="spark-intro__headline">
+            <p class="article-kicker">THE HUMAN PERSPECTIVE</p>
+            <h2>AI의 가능성에<br />인간의 <em>안목</em>을<br />더하다</h2>
+            <p class="spark-intro__formula">AI <em>×</em> HUMAN <em>=</em><br /><strong>SPARK<em>✳</em></strong></p>
+            <p class="article-caption">더 많은 답을 얻는 것보다 중요한 것은<br />어떤 답을 선택하는가다.</p>
+          </div>
+          <div class="spark-intro__text">
+            <h3>AI가 분석하고, 인간이 판단하고,<br />함께 새로운 가치를 만드는 시대.</h3>
+            <p>AI에게 여행 계획을 짜달라고 해보자. 단 몇 초 만에 유명 관광지부터 맛집, 이동 동선까지 빈틈없는 일정표가 완성된다. 하지만 정작 여행에서 가장 오래 기억에 남는 곳은 계획에 없던 골목길의 작은 식당일지도, 우연히 만난 작은 플리마켓일지도 모른다. 수많은 정보를 분석하는 능력과 나에게 특별한 가치를 알아보는 능력은 다르기 때문이다.</p>
+            <p>일터에서도 마찬가지다. AI가 설비 데이터를 분석해 이상 징후를 찾아낸다. 그런데 오랫동안 현장을 지켜온 엔지니어는 평소와 미묘하게 다른 소리에서 문제의 단서를 발견할 수도 있다. 데이터가 보여주는 정보에 경험과 관찰이 더해질 때 새로운 해결책이 탄생하는 것이다.</p>
+            <p>〈트렌드 코리아 2027〉이 주목한 ‘안목자본’도 이러한 변화와 맞닿아 있다. AI가 수많은 결과물을 빠르게 만들어내는 시대, 중요한 것은 무엇을 더 많이 만들어내느냐보다 무엇이 진짜 가치 있는지 알아보는 능력이라는 것이다.</p>
+            <p>안목은 타고난 감각만이 아니다. 오래 보고, 경험하고, 비교하고, 때로는 실패하는 과정에서 길러지는 판단의 힘이다. 같은 것을 보더라도 남들이 놓친 가능성을 발견하고, 수많은 선택지 가운데 가장 적합한 답을 찾아내는 능력이다.</p>
+            <p class="spark-intro__closing">AI가 가능성을 넓힌다면 인간의 안목은 그 가능성에 방향을 부여한다. 그렇다면 LS ELECTRIC 임직원들의 남다른 안목은 어디에서 빛을 발할까? 우리의 선택과 경험 속에 숨어 있는 특별한 한 끗을 찾아보자.</p>
+          </div>
+        </section>
+
+        <figure class="article-art">
+          <img src="./assets/articles/sub1/spark-banner.webp" width="1920" height="247" alt="AI × HUMAN = SPARK. 기술에 남다른 안목이 더해질 때 혁신이 시작됩니다." loading="lazy" />
+        </figure>
+
+        <section class="spark-survey article-wide">
+          <header class="article-split">
+            <div class="spark-survey__head">
+              <p class="article-kicker">A QUESTION OF PERSPECTIVE</p>
+              <h2>당신의 안목은<br />어떤 <em>스타일?</em></h2>
+            </div>
+            <p>일상의 선택부터 AI와의 협업까지,<br />나만의 ‘보는 눈’ 분석</p>
+          </header>
+          <div class="spark-survey__layout">
+            <aside><ol class="spark-survey__topics">
+              <li><span>Q1</span> 일상의 선택</li>
+              <li><span>Q2</span> 시야가 넓어지는 순간</li>
+              <li><span>Q3</span> 일하는 방식</li>
+              <li><span>Q4</span> AI와 나의 SPARK</li>
+            </ol><p class="spark-survey__progress"><strong>0</strong> / 4<br /><small>선택한 질문</small></p></aside>
+            <div><h3>처음 가본 동네,<br />점심 메뉴를 고른다면?</h3><p>지금 가장 마음이 가는 선택 하나.</p><ul class="spark-survey__choices">
+              <li><span aria-hidden="true">＋</span><div><strong>데이터를 믿는다!</strong><p>리뷰 1,000개, 평점 4.9점인 맛집</p></div></li>
+              <li><span aria-hidden="true">◇</span><div><strong>숨은 가치를 알아본다!</strong><p>리뷰는 없지만 현지인들로 북적이는 식당</p></div></li>
+              <li><span aria-hidden="true">∿</span><div><strong>느낌이 온다!</strong><p>간판과 메뉴판만 봐도 맛집인지 감이 오는 곳</p></div></li>
+              <li><span aria-hidden="true">✳</span><div><strong>새로운 경험이 좋다!</strong><p>한 번도 먹어보지 못한 이색 메뉴가 있는 식당</p></div></li>
+            </ul><p class="spark-survey__page">1 / 4</p></div>
+          </div>
+        </section>
+
+        <figure class="article-art spark-result">
+          <picture>
+            <source media="(max-width: 700px)" srcset="./assets/articles/sub1/perspectives-mobile.webp" />
+            <img src="./assets/articles/sub1/perspectives.webp" width="1920" height="1432" alt="서로 다른 가능성을 연결하는 힘을 표현한 두 개의 원" loading="lazy" />
+          </picture>
+          <div class="article-transcript">
+            <h3>융합형 안목</h3>
+            <p>AI의 분석력에 현장의 경험을 더하는 사람들!</p>
+            <p>AI가 제시한 결과를 그대로 받아들이기보다 여러 대안의 장점을 결합하고, 자신의 경험과 판단을 더해 새로운 답을 찾아가려는 성향! 이를 바탕으로 도출한 LS ELECTRIC인의 안목은 바로 ‘융합형 안목’이다.</p>
+          </div>
+        </figure>
+
+        <section class="spark-practice article-wide">
+          <header class="article-split">
+            <div class="spark-practice__intro">
+              <p class="article-kicker">A SMALL SHIFT. A NEW PERSPECTIVE.</p>
+              <h2>안목은 타고나는 게<br />아니라, <em>키우는 것.</em></h2>
+            </div>
+            <p>거창한 공부나 특별한 경험이 필요한 것은 아니다. 평범한 일상에서 질문 하나를 바꾸고, 익숙한 것을 다르게 바라보는 작은 습관이 남다른 안목을 만든다.</p>
+          </header>
+          <article class="spark-challenge">
+            <div class="spark-challenge__label">
+              <p class="article-kicker">다르게 보는 눈</p>
+              <h3>점심 메이트<br />체인지</h3>
+            </div>
+            <span class="spark-challenge__symbol" aria-hidden="true">×</span>
+            <div class="spark-challenge__body">
+              <p>매일 같은 사람들과 같은 메뉴를 먹고 있다면 오늘은 다른 부서 동료에게 점심을 청해보자. 식사 중 딱 하나만 물어보면 된다.</p>
+              <blockquote>“요즘 제일 골치 아픈 일이 뭐예요?”</blockquote>
+              <p>우리 팀에서는 생각하지 못했던 고민이나 업무 방식에서 뜻밖의 아이디어를 발견할 수도 있다.</p>
+            </div>
+          </article>
+          <article class="spark-challenge">
+            <div class="spark-challenge__label">
+              <p class="article-kicker">판단하는 눈</p>
+              <h3>AI 반박<br />챌린지</h3>
+            </div>
+            <span class="spark-challenge__symbol" aria-hidden="true">?</span>
+            <div class="spark-challenge__body">
+              <p>AI가 작성한 보고서나 기획안이 꽤 그럴듯하다. 그대로 복사해서 제출하고 싶은 순간, 딱 한 번만 더 질문해보자.</p>
+              <blockquote>“이 아이디어가 실패할 이유 세 가지만 찾아줘.”</blockquote>
+              <p>AI가 제시한 약점을 검토하고 실제 업무에 해당하는 위험을 직접 판단해보는 것이다.</p>
+            </div>
+          </article>
+          <article class="spark-challenge">
+            <div class="spark-challenge__label">
+              <p class="article-kicker">연결하는 눈</p>
+              <h3>아이디어<br />이어달리기</h3>
+            </div>
+            <span class="spark-challenge__symbol" aria-hidden="true">＋</span>
+            <div class="spark-challenge__body">
+              <p>동료가 내 생각과 다른 의견을 냈을 때, 곧바로 반박하고 싶어질 수 있다. 그럴 때 오늘은 말의 시작을 바꿔보자.</p>
+              <blockquote>“그렇다면 여기에 이런 방법을 더해보면 어떨까요?”</blockquote>
+              <p>서로 다른 생각을 연결하는 순간, 혼자서는 떠올리지 못했던 새로운 해결책이 탄생할 수 있다.</p>
+            </div>
+          </article>
+        </section>
+
+        <figure class="article-art">
+          <img src="./assets/articles/sub1/closing.webp" width="1920" height="548" alt="AI가 가능성을 넓힌다면, 방향은 우리의 안목으로." loading="lazy" />
+        </figure>
+
+        <section class="article-feedback" aria-labelledby="article-keywords-heading">
+          <div class="article-prose">
+            <h2 id="article-keywords-heading">이 이야기의 키워드</h2>
+            <ul class="article-tags">
+              <li>#남다른안목</li>
+              <li>#AI와인간</li>
+              <li>#경험과관찰</li>
+              <li>#판단력</li>
+              <li>#안목자본</li>
+              <li>#SPARK</li>
+            </ul>
+            <div class="article-reaction">
+              <p>이번 이야기는 어떠셨나요?</p>
+              <span class="article-reaction__count"><span aria-hidden="true">👍</span><span aria-label="좋아요 6개">6</span></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-discover" aria-labelledby="article-discover-heading">
+          <div class="article-prose">
+            <h2 id="article-discover-heading" lang="en">DISCOVER</h2>
+            <div class="article-discover__grid">
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/dc-platform.webp" width="326" height="213" alt="지능형 DC 플랫폼을 소개하는 구자균 회장" loading="lazy" />
+                <h3>구자균 회장, “AI 전력난 해법은 지능형 DC 배전”</h3>
+                <p>아시아 첫 CIRED 기조연설에서 지능형 DC 플랫폼의 미래를 소개합니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/history.webp" width="326" height="213" alt="LS ELECTRIC 사업장의 전경" loading="lazy" />
+                <h3>LS ELECTRIC의 역사를 가장 빠르게 살펴보는 법</h3>
+                <p>LS ELECTRIC의 기업사를 6분으로 정리한 영상입니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/pricing.webp" width="326" height="213" alt="동료와 함께 앉은 LS ELECTRIC 마케팅팀" loading="lazy" />
+                <h3>숫자 너머의 시장을 읽고, 가격을 설계하다</h3>
+                <p>사업총괄)마케팅팀 가격·데이터 Part</p>
+              </article>
+            </div>
+          </div>
+          <a class="article-top" href="#article-top" aria-label="맨 위로 이동"><span aria-hidden="true">⌃</span></a>
+        </section>
+      </article>
     </main>
+
+    <footer class="site-footer" data-footer>
+      <div class="site-footer__top">
+        <div class="site-footer__inner site-footer__top-inner">
+          <a class="site-footer__brand" href="#article-top" aria-label="E.ON 웹진 홈">
+            <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+            <span lang="en">LS ELECTRIC WEB MAGAZINE</span>
+          </a>
+          <nav class="site-footer__socials" aria-label="LS ELECTRIC 소셜 미디어">
+            <a href="https://www.linkedin.com/company/lselectric/" aria-label="LS ELECTRIC 링크드인"><img src="./assets/icon-linkedin.png" alt="" width="32" height="33" /></a>
+            <a href="https://www.youtube.com/@LSELECTRIC" aria-label="LS ELECTRIC 유튜브"><img src="./assets/icon-youtube.png" alt="" width="41" height="28" /></a>
+            <a href="https://blog.naver.com/ls-electric" aria-label="LS ELECTRIC 블로그"><img src="./assets/icon-blog.png" alt="" width="43" height="40" /></a>
+            <a href="https://www.instagram.com/lselectric_global/" aria-label="LS ELECTRIC 인스타그램"><img src="./assets/icon-instagram.png" alt="" width="43" height="44" /></a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__inner site-footer__bottom-inner">
+          <a class="site-footer__privacy" href="https://www.ls-electric.com/ko/etc/privacy">개인정보처리방침</a>
+          <p class="site-footer__copyright" lang="en">Copyright © 2021 LS ELECTRIC Co., Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

@@ -3,13 +3,274 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>히어로즈의 은밀한 출장 | E.ON WEBZINE</title>
+    <meta name="description" content="전기가 스스로 생각하는 공장에, 세 히어로가 잠입했다 · LS ELECTRIC E.ON 웹진" />
+    <title>전기가 스스로 생각하는 공장에, 세 히어로가 잠입했다 | E.ON WEBZINE</title>
+    <link rel="icon" href="./assets/eon-logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/articles.css" />
+    <script src="./js/header.js" defer></script>
+    <script src="./js/article-summary.js" defer></script>
   </head>
-  <body>
-    <main>
-      <h1>히어로즈의 은밀한 출장</h1>
-      <p>페이지 준비 중입니다.</p>
-      <a href="./index.html">E.ON 웹진 메인으로</a>
+  <body class="article-page article-page--6">
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="E.ON 웹진 홈으로 이동">
+        <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+        <span lang="en">WEBZINE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
+        <a href="./main2.html#theme">Theme. On</a>
+        <a href="./main2.html#company">Company. On</a>
+        <a href="./main2.html#culture">Culture. On</a>
+        <a href="./main2.html#news">LS NEWS+</a>
+        <a href="#event-popup" aria-haspopup="dialog" aria-controls="event-popup" data-event-open>EVENT</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-button notification-button" href="./main2.html#news" aria-label="새 소식 보기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+          </svg>
+          <span class="notification-dot" aria-hidden="true"></span>
+        </a>
+        <button class="icon-button search-button" type="button" aria-label="검색" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="7.3" />
+            <path d="m16.2 16.2 5 5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="event-dialog" id="event-popup" aria-labelledby="event-popup-title" data-event-popup>
+      <div class="event-drawer">
+        <div class="event-panel">
+          <h2 class="visually-hidden" id="event-popup-title">AI 동료 밸런스</h2>
+          <img class="event-panel__image" src="./assets/event-preview.png" width="1593" height="1622" alt="AI에게 말할 때, 나는? 반말파 대 존댓말파. 시안에 표시된 결과는 47% 대 53%이며 참여 인원은 1,286명입니다." />
+          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus></button>
+        </div>
+        <button class="event-tab" type="button" aria-label="이벤트 닫기" data-event-close><span>EVENT</span></button>
+      </div>
+    </dialog>
+
+    <main id="article-top">
+      <article aria-labelledby="article-title">
+        <section class="article-hero article-hero--feature article-hero--heroes" aria-labelledby="article-title">
+          <img class="article-hero__image" src="./assets/articles/sub6/hero.webp" width="1920" height="804" alt="전력기기 생산 설비 사이를 이동하는 LS 자율주행 물류로봇" fetchpriority="high" />
+          <div class="article-hero__inner">
+            <div class="article-hero__eyebrow"><span>히어로즈의 은밀한 출장</span><span>Company. On</span></div>
+            <h1 id="article-title">전기가 스스로 생각하는 공장에,<br />세 히어로가 잠입했다</h1>
+            <p class="article-hero__subtitle">차단기 생산부터 자율주행 물류까지, LS ELECTRIC 청주사업장</p>
+            <div class="article-hero__bottom">
+              <time datetime="2027-01-03">2027.01.03</time>
+              <div class="article-hero__actions" role="group" aria-label="기사 도구">
+                <div class="article-summary" data-summary>
+                  <button class="article-tool article-tool--summary" type="button" aria-expanded="false" aria-controls="article-summary-panel" data-summary-toggle>
+                    <img src="./assets/articles/sub-ai-white.png" width="24" height="24" alt="" />
+                    <span>AI 요약</span>
+                  </button>
+                  <section class="article-summary__panel" id="article-summary-panel" aria-labelledby="article-summary-heading" tabindex="-1" hidden inert data-summary-panel>
+                    <button class="article-summary__close" type="button" aria-label="AI 요약 닫기" data-summary-close><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+                    <div class="article-summary__content">
+                      <h2 id="article-summary-heading"><img src="./assets/articles/sub-ai-purple.png" width="24" height="24" alt="" />AI 요약 | LS ELECTRIC 청주사업장 한눈에 보기</h2>
+                      <p>LS ELECTRIC 청주사업장은 차단기와 수배전반 등 전력기기를 생산한다. 조립부터 검사·물류까지 데이터를 연결하고 자율주행 로봇과 AI 용접을 현장에 적용해 2021년 세계경제포럼 등대공장으로 선정됐다. 볼트·에코·히로는 생산라인을 둘러보며 자동화 설비가 하는 일과 품질·안전을 최종 판단하는 현장 전문가의 역할을 살핀다.</p>
+                    </div>
+                  </section>
+                </div>
+                <button class="article-tool article-tool--share" type="button" aria-label="공유" aria-disabled="true" tabindex="-1">
+                  <img src="./assets/articles/sub-share-white.png" width="30" height="30" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="heroes-story">
+          <div class="article-prose heroes-intro">
+            <p>오늘 일렉트릭 히어로즈가 도착한 곳은 충북 청주, LS ELECTRIC 청주사업장. 전기를 안전하게 흐르게 하고 필요할 때 정확히 끊어주는 전력기기를 만드는 곳이다. 이곳에서는 부품 조립부터 검사와 포장, 물류까지 생산의 여러 과정이 데이터로 연결된다. 오늘의 비밀 임무는 ‘공장은 어떻게 스스로 생각하고 움직이는가’를 밝히는 것. 볼트는 전력의 흐름을, 에코는 에너지 사용을, 히로는 자동화의 비밀을 맡았다. 세 친구는 자율주행 물류로봇 뒤에 바짝 붙어 공장 안으로 조용히 미끄러져 들어갔다.</p>
+          </div>
+
+          <figure class="article-prose article-photo article-photo--wide">
+            <img src="./assets/articles/sub6/arrival.webp" width="1240" height="670" alt="청주사업장 안에서 LS 자동 운반차를 올려다보는 히어로즈" loading="lazy" />
+          </figure>
+
+          <section class="article-prose article-chapter">
+            <h2><span class="article-chapter__number">01 <span aria-hidden="true">|</span></span> LS ELECTRIC 청주사업장에서는 무엇을 만들까?</h2>
+            <p>청주사업장에 들어선 볼트의 머리띠가 연신 반짝였다. 공장 곳곳에서 전기를 안전하게 제어하는 전력기기가 만들어지고 있었기 때문이다. 이곳에서는 MCCB·ACB·VCB 같은 차단기부터 수배전반, 몰드변압기, GIS 등 다양한 전력기기와 시스템 설비를 생산한다. 이름은 조금 어렵지만 하는 일은 분명하다. 전기가 필요한 곳까지 안정적으로 흐르도록 돕고, 이상이 생기면 빠르게 끊어 사람과 설비를 보호하는 것이다. 볼트가 차단기 앞에서 고개를 끄덕였다. “전기를 잘 보내는 것만큼, 잘 멈추게 하는 것도 중요하군.”</p>
+            <aside class="heroes-terms">
+              <div class="heroes-terms__item">
+                <h3>MCCB · 배선용 차단기</h3>
+                <p>MCCB : Molded Case Circuit Breaker의 약자. 과전류나 단락이 발생했을 때 회로를 차단해 전기설비를 보호하는 배선용차단기다. ACB : Vacuum Circuit Breaker의 약자. 진공 상태에서 전류를 안전하게 차단하는 고압용 차단기다.</p>
+              </div>
+              <div class="heroes-terms__item">
+                <h3>전력 제어 설비</h3>
+                <p>외부에서 들어온 전기를 받아 필요한 곳으로 나누어 보내고, 전력의 상태를 제어·보호하는 설비다.</p>
+              </div>
+            </aside>
+            <p>사람에게는 제품 한 대지만 히어로즈에게는 거대한 전력 도시다. 볼트는 차단기 사이를 날며 전기의 길을 살폈고, 에코는 설비마다 얼마나 효율적으로 에너지를 사용하는지 유심히 들여다봤다. 그사이 히로는 이동 중인 물류로봇에 살짝 올라탔다. “잠깐만 타려던 건데, 이 친구 길을 너무 잘 알잖아?” 로봇이 정확한 위치에 멈추자 히로는 망토를 털며 태연하게 내려왔다.</p>
+          </section>
+
+          <figure class="article-prose article-photo article-photo--wide">
+            <img src="./assets/articles/sub6/tour.webp" width="1240" height="740" alt="LS 자동 운반차와 청주사업장 생산라인을 둘러보는 볼트" loading="lazy" />
+          </figure>
+
+          <figure class="article-prose sound-quiz">
+            <img src="./assets/articles/sub6/sound.webp" width="652" height="685" alt="HEROES SOUND. 청주사업장의 작동음을 알아보는 소리 퀴즈 시안" loading="lazy" />
+            <div class="article-transcript">
+              <h3>히어로즈가 청주사업장에서 들은 소리는?</h3>
+              <p>① 대형 커피머신이 주문을 처리하는 소리</p>
+              <p>② 전력기기 조립·검사설비와 물류로봇이 움직이는 소리</p>
+              <p>③ 볼트가 번개를 충전하는 소리</p>
+              <p>④ 에코의 배꼽시계</p>
+              <p>정답 : ② 이 소리는 생산설비와 물류로봇이 각자의 공정을 수행하는 작동음입니다.</p>
+            </div>
+          </figure>
+
+          <figure class="article-prose article-photo article-photo--wide">
+            <img src="./assets/articles/sub6/pocket.webp" width="1240" height="645" alt="작업복 주머니에서 공장을 살피는 작은 히어로즈" loading="lazy" />
+          </figure>
+
+          <section class="article-prose article-chapter">
+            <h2><span class="article-chapter__number">02 <span aria-hidden="true">|</span></span> 스마트공장은 어떻게 스스로 움직일까?</h2>
+            <p>이번에는 히로가 차원 이동 능력을 발휘해 생산라인 안쪽으로 먼저 들어갔다. 그런데 히로가 도착하기도 전에 설비는 생산할 제품에 맞춰 조건을 바꾸고, 물류로봇은 필요한 부품을 정확한 위치로 옮기고 있었다. 청주사업장 스마트공장에는 IIoT 기반 자동 설비 모델 변경 시스템, 자율주행 사내 물류로봇, AI 기반 실시간 자동 용접, 머신러닝 기반 소음·진동 검사 등 다양한 기술이 적용돼 있다. 생산과 품질 데이터가 연결되면서 다품종 생산에 유연하게 대응하고 이상 징후도 더 빠르게 살필 수 있다. 이런 제조 혁신 역량을 인정받아 청주사업장은 2021년 세계경제포럼이 선정하는 등대공장에 이름을 올렸다.</p>
+          </section>
+
+          <figure class="article-prose article-photo">
+            <img src="./assets/articles/sub6/automation.webp" width="1020" height="649" alt="자율 운반차와 생산설비가 배치된 청주 스마트공장" loading="lazy" />
+          </figure>
+
+          <div class="article-prose">
+            <p>히로는 괜히 망토를 한 번 고쳐 맸다. 하지만 공장을 조금 더 지켜보자 스마트하다는 말이 단순히 기계가 사람 없이 움직인다는 뜻은 아니라는 사실을 알게 됐다. 데이터가 이상을 알려도 원인을 판단하고, 생산조건을 조정하고, 품질과 안전을 최종 확인하는 일에는 현장 전문가의 경험이 필요했다. AI와 자동화가 가능성을 빠르게 보여준다면, 어떤 답을 실제 공정에 적용할지는 사람이 결정한다. 설비는 서로 연결돼 움직이고, 혁신은 생산·기술·품질 등 서로 다른 전문성을 가진 사람들이 연결될 때 완성된다.</p>
+          </div>
+
+          <figure class="article-prose article-note heroes-note">
+            <img src="./assets/articles/sub6/hero-note.webp" width="1097" height="900" alt="히어로즈 취재 노트와 오렌지색 마스코트" loading="lazy" />
+            <div class="article-transcript">
+              <h3>히어로즈 취재 노트</h3>
+              <h4>Q. 청주사업장은 차단기만 만드는 곳인가요?</h4><p>차단기가 대표적인 생산품목이지만 전부는 아니다. LS ELECTRIC 공개 자료에서는 MCCB·ACB·VCB 같은 차단기와 수배전반, 몰드변압기, GIS 등 다양한 전력기기와 시스템 설비를 확인할 수 있다.</p>
+              <h4>Q. 등대공장이라니, 공장에 진짜 등대가 있나요?</h4><p>등대공장은 세계경제포럼이 첨단 기술을 활용해 제조 혁신을 이끄는 사업장에 부여하는 명칭이다. 청주사업장은 AI·IIoT·자동화 기술을 생산 현장에 적용한 성과를 인정받아 2021년 선정됐다.</p>
+              <h4>Q. AI가 알아서 공장을 운영하나요?</h4><p>AI와 데이터는 설비 상태를 살피고 검사와 의사결정을 지원한다. 생산조건을 정하고 이상 상황에 대응하며 품질과 안전을 최종 판단하는 일은 현장 전문가의 역할과 함께 이뤄진다.</p>
+              <h4>Q. 청주사업장 사람들에게만 생기는 ‘직업병’이 있나요?</h4><p>건물의 분전반이나 차단기를 보면 제조사와 정격부터 확인하고, 익숙한 설비음의 작은 변화도 남들보다 먼저 알아챈다는 사람들. 전기가 보이지 않는다고 해서 관심까지 꺼지는 것은 아니다.</p>
+            </div>
+          </figure>
+
+          <section class="article-prose article-chapter">
+            <h2><span class="article-chapter__number">03 <span aria-hidden="true">|</span></span> 자동화가 깊어질수록 사람이 더 중요한 이유</h2>
+            <p>히어로즈는 거대한 설비보다 더 자주 현장 사람들의 얼굴을 올려다봤다. 모니터 속 데이터를 다시 확인하는 눈, 설비 상태를 점검하는 손, 작은 이상음에 걸음을 멈추는 귀, 문제가 생기면 여러 부서가 머리를 맞대는 회의. 스마트공장은 데이터를 기반으로 빠르게 움직이지만, 그 기준을 세우고 예외에 대응하는 것은 사람이다. 전력기기의 품질 역시 하나의 설비나 하나의 수치만으로 완성되지 않는다. 생산·기술·품질·설비 담당자가 서로의 판단을 연결해야 제품의 신뢰성과 현장의 안전을 함께 지킬 수 있다.</p>
+          </section>
+
+          <figure class="article-prose article-photo article-photo--wide">
+            <img src="./assets/articles/sub6/teamwork.webp" width="1240" height="730" alt="생산 현장 데이터를 살피며 함께 이야기하는 LS 구성원들" loading="lazy" />
+          </figure>
+
+          <div class="article-prose">
+            <p>오늘 히어로즈가 청주사업장에서 발견한 진짜 히어로는 생산과 설비, 품질 데이터를 연결하는 제조혁신 담당자입니다. 설비가 보내는 신호를 읽고 현장을 직접 확인하며, 더 안전하고 효율적인 방법을 동료들과 함께 찾아가는 것이 그의 일입니다. 볼트·에코·히로는 오늘의 HERO 스티커를 슬쩍 붙여두기로 했습니다. “스마트공장을 움직이는 건 기술이지만, 더 나은 방향으로 움직이게 하는 건 결국 사람의 판단 아닐까요?”</p>
+          </div>
+
+          <section class="article-note article-prose heroes-stretches">
+            <header><h2>히어로즈의 충전 처방</h2><p>오래 서 있었다면, 발목부터 체크!</p></header>
+            <p>청주사업장처럼 서 있거나 걷는 시간이 긴 현장에서는 하루가 끝날수록 발목과 종아리에 피로가 쌓이기 쉽습니다. 히어로즈가 오늘의 ‘3분 에너지 리셋’을 처방합니다. 별도 도구 없이 잠깐만 몸을 풀어도 굳어 있던 하체를 가볍게 깨울 수 있어요.</p>
+            <div class="heroes-stretches__grid">
+              <figure class="heroes-movement">
+                <img src="./assets/articles/sub6/stretch-calfraise.webp" width="297" height="297" alt="① 까치발 들기 10회" loading="lazy" />
+                <figcaption><h3>① 까치발 들기 10회</h3><p>벽이나 의자를 가볍게 잡고 발뒤꿈치를 천천히 올렸다 내립니다. 반동보다는 천천히 움직이는 것이 포인트!</p></figcaption>
+              </figure>
+              <figure class="heroes-movement">
+                <img src="./assets/articles/sub6/stretch-stretch.webp" width="297" height="297" alt="② 종아리 늘리기 20초 × 양쪽" loading="lazy" />
+                <figcaption><h3>② 종아리 늘리기 20초 × 양쪽</h3><p>한 발을 뒤로 보내 뒤꿈치를 바닥에 붙인 채 앞쪽 무릎을 살짝 굽혀주세요. 종아리가 부드럽게 당기는 정도까지만.</p></figcaption>
+              </figure>
+              <figure class="heroes-movement">
+                <img src="./assets/articles/sub6/stretch-ankle.webp" width="297" height="297" alt="③ 발목 돌리기 10회 × 양쪽" loading="lazy" />
+                <figcaption><h3>③ 발목 돌리기 10회 × 양쪽</h3><p>의자에 앉아 한쪽 발을 살짝 들고 발목으로 천천히 원을 그립니다. 반대 방향도 같은 횟수로 반복합니다.</p></figcaption>
+              </figure>
+            </div>
+          </section>
+        </section>
+
+        <aside class="article-facts">
+          <div class="article-prose">
+            <h2 lang="en">HEROES FACT CHECK</h2>
+            <h3>이 기사는 무엇을 근거로 작성했나요?</h3>
+            <dl>
+              <div><dt>취재 대상</dt><dd>LS ELECTRIC 청주사업장</dd></div>
+              <div><dt>주요 근거자료</dt><dd>LS ELECTRIC 공개 회사·사업장·기술·지속가능경영 자료</dd></div>
+              <div><dt>확인 정보</dt><dd>청주사업장 소재지 / 주요 전력기기·시스템 설비 / 2021년 세계경제포럼 등대공장 선정 / AI·IIoT 기반 스마트팩토리 적용 사례</dd></div>
+              <div><dt>실제 발행 시 추가 확인</dt><dd>현재 생산품목 / 최신 조직·공정 / 적용 기술의 현재 운영 범위 / 직원 인터뷰 / 현장음 / 사업장 고유문화</dd></div>
+              <div><dt>발행일</dt><dd>2027. 01. 02</dd></div>
+              <div><dt>취재·작성</dt><dd>LS ELECTRIC E.ON 편집팀</dd></div>
+              <div><dt>내용 감수</dt><dd>LS ELECTRIC 청주사업장 담당부서</dd></div>
+            </dl>
+          </div>
+        </aside>
+
+        <section class="article-feedback" aria-labelledby="article-keywords-heading">
+          <div class="article-prose">
+            <h2 id="article-keywords-heading">이 이야기의 키워드</h2>
+            <ul class="article-tags">
+              <li>#히어로즈</li>
+              <li>#청주사업장</li>
+              <li>#스마트공장</li>
+              <li>#물류로봇</li>
+              <li>#전력기기</li>
+              <li>#등대공장</li>
+              <li>#제조혁신</li>
+            </ul>
+            <div class="article-reaction">
+              <p>이번 이야기는 어떠셨나요?</p>
+              <span class="article-reaction__count"><span aria-hidden="true">👍</span><span aria-label="좋아요 6개">6</span></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-discover" aria-labelledby="article-discover-heading">
+          <div class="article-prose">
+            <h2 id="article-discover-heading" lang="en">DISCOVER</h2>
+            <div class="article-discover__grid">
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/dc-platform.webp" width="326" height="213" alt="지능형 DC 플랫폼을 소개하는 구자균 회장" loading="lazy" />
+                <h3>구자균 회장, “AI 전력난 해법은 지능형 DC 배전”</h3>
+                <p>아시아 첫 CIRED 기조연설에서 지능형 DC 플랫폼의 미래를 소개합니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/history.webp" width="326" height="213" alt="LS ELECTRIC 사업장의 전경" loading="lazy" />
+                <h3>LS ELECTRIC의 역사를 가장 빠르게 살펴보는 법</h3>
+                <p>LS ELECTRIC의 기업사를 6분으로 정리한 영상입니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/pricing.webp" width="326" height="213" alt="동료와 함께 앉은 LS ELECTRIC 마케팅팀" loading="lazy" />
+                <h3>숫자 너머의 시장을 읽고, 가격을 설계하다</h3>
+                <p>사업총괄)마케팅팀 가격·데이터 Part</p>
+              </article>
+            </div>
+          </div>
+          <a class="article-top" href="#article-top" aria-label="맨 위로 이동"><span aria-hidden="true">⌃</span></a>
+        </section>
+      </article>
     </main>
+
+    <footer class="site-footer" data-footer>
+      <div class="site-footer__top">
+        <div class="site-footer__inner site-footer__top-inner">
+          <a class="site-footer__brand" href="#article-top" aria-label="E.ON 웹진 홈">
+            <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+            <span lang="en">LS ELECTRIC WEB MAGAZINE</span>
+          </a>
+          <nav class="site-footer__socials" aria-label="LS ELECTRIC 소셜 미디어">
+            <a href="https://www.linkedin.com/company/lselectric/" aria-label="LS ELECTRIC 링크드인"><img src="./assets/icon-linkedin.png" alt="" width="32" height="33" /></a>
+            <a href="https://www.youtube.com/@LSELECTRIC" aria-label="LS ELECTRIC 유튜브"><img src="./assets/icon-youtube.png" alt="" width="41" height="28" /></a>
+            <a href="https://blog.naver.com/ls-electric" aria-label="LS ELECTRIC 블로그"><img src="./assets/icon-blog.png" alt="" width="43" height="40" /></a>
+            <a href="https://www.instagram.com/lselectric_global/" aria-label="LS ELECTRIC 인스타그램"><img src="./assets/icon-instagram.png" alt="" width="43" height="44" /></a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__inner site-footer__bottom-inner">
+          <a class="site-footer__privacy" href="https://www.ls-electric.com/ko/etc/privacy">개인정보처리방침</a>
+          <p class="site-footer__copyright" lang="en">Copyright © 2021 LS ELECTRIC Co., Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

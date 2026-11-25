@@ -3,13 +3,216 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AI X파일 | E.ON WEBZINE</title>
+    <meta name="description" content="AI로 업무 디테일 UP 김 매니저의 실전 사용법 · LS ELECTRIC E.ON 웹진" />
+    <title>AI로 업무 디테일 UP 김 매니저의 실전 사용법 | E.ON WEBZINE</title>
+    <link rel="icon" href="./assets/eon-logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/articles.css" />
+    <script src="./js/header.js" defer></script>
+    <script src="./js/article-summary.js" defer></script>
   </head>
-  <body>
-    <main>
-      <h1>AI X파일</h1>
-      <p>페이지 준비 중입니다.</p>
-      <a href="./index.html">E.ON 웹진 메인으로</a>
+  <body class="article-page article-page--2">
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="E.ON 웹진 홈으로 이동">
+        <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+        <span lang="en">WEBZINE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
+        <a href="./main2.html#theme">Theme. On</a>
+        <a href="./main2.html#company">Company. On</a>
+        <a href="./main2.html#culture">Culture. On</a>
+        <a href="./main2.html#news">LS NEWS+</a>
+        <a href="#event-popup" aria-haspopup="dialog" aria-controls="event-popup" data-event-open>EVENT</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-button notification-button" href="./main2.html#news" aria-label="새 소식 보기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+          </svg>
+          <span class="notification-dot" aria-hidden="true"></span>
+        </a>
+        <button class="icon-button search-button" type="button" aria-label="검색" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="7.3" />
+            <path d="m16.2 16.2 5 5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="event-dialog" id="event-popup" aria-labelledby="event-popup-title" data-event-popup>
+      <div class="event-drawer">
+        <div class="event-panel">
+          <h2 class="visually-hidden" id="event-popup-title">AI 동료 밸런스</h2>
+          <img class="event-panel__image" src="./assets/event-preview.png" width="1593" height="1622" alt="AI에게 말할 때, 나는? 반말파 대 존댓말파. 시안에 표시된 결과는 47% 대 53%이며 참여 인원은 1,286명입니다." />
+          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus></button>
+        </div>
+        <button class="event-tab" type="button" aria-label="이벤트 닫기" data-event-close><span>EVENT</span></button>
+      </div>
+    </dialog>
+
+    <main id="article-top">
+      <article aria-labelledby="article-title">
+        <section class="article-hero article-hero--feature article-hero--ai" aria-labelledby="article-title">
+          <img class="article-hero__image" src="./assets/articles/sub2/hero.webp" width="1920" height="902" alt="노트북을 사용하는 김지효 매니저와 반투명 업무 아이콘" fetchpriority="high" />
+          <div class="article-hero__inner">
+            <div class="article-hero__eyebrow"><span>AI X파일</span><span>Theme. On</span></div>
+            <h1 id="article-title">AI로 업무 디테일 UP<br />김 매니저의 실전 사용법</h1>
+            <p class="article-hero__subtitle">메일? 자료? 번역? 뭐가 문제야!</p>
+            <div class="article-hero__bottom">
+              <time datetime="2027-01-02">2027.01.02</time>
+              <div class="article-hero__actions" role="group" aria-label="기사 도구">
+                <div class="article-summary" data-summary>
+                  <button class="article-tool article-tool--summary" type="button" aria-expanded="false" aria-controls="article-summary-panel" data-summary-toggle>
+                    <img src="./assets/articles/sub-ai-white.png" width="24" height="24" alt="" />
+                    <span>AI 요약</span>
+                  </button>
+                  <section class="article-summary__panel" id="article-summary-panel" aria-labelledby="article-summary-heading" tabindex="-1" hidden inert data-summary-panel>
+                    <button class="article-summary__close" type="button" aria-label="AI 요약 닫기" data-summary-close><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+                    <div class="article-summary__content">
+                      <h2 id="article-summary-heading"><img src="./assets/articles/sub-ai-purple.png" width="24" height="24" alt="" />AI 요약 | 김지효 매니저의 AI 활용법</h2>
+                      <p>LS일렉트릭 김지효 매니저는 K-LUSTER로 밤새 쌓인 메신저에서 할 일을 뽑고, 협력업체에 보낼 메일 초안을 작성한다. 계약서나 공사 자료를 살필 때는 관련 조항, 비용, 공정처럼 확인할 기준을 먼저 제시해 읽어야 할 범위를 좁힌다. 반복 업무에 드는 시간을 줄여 원문 확인과 판단, 조율에 더 집중하는 것이 핵심이다.</p>
+                    </div>
+                  </section>
+                </div>
+                <button class="article-tool article-tool--share" type="button" aria-label="공유" aria-disabled="true" tabindex="-1">
+                  <img src="./assets/articles/sub-share-white.png" width="30" height="30" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="ai-story">
+          <div class="ai-story__intro article-prose">
+            <p>AI, 여러분은 업무에서 얼마나 활용하고 있나요? 중요한 건 기능을 많이 아는 것이 아니라, 어떤 일은 AI에 맡기고 어떤 일에 내가 집중할지 구분하는 것이죠. LS일렉트릭 김지효 매니저는 반복해서 읽고, 정리하고, 초안을 만드는 데 쓰던 시간을 K-LUSTER로 줄이고, 그만큼 판단과 조율이 필요한 핵심 업무에 더 집중하고 있습니다. 김 프로만의 AI 활용 X파일을 열어볼까요?</p>
+          </div>
+          <figure class="ai-story__chapter ai-story__chapter--blue">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./assets/articles/sub2/chapter-1-mobile.webp" />
+              <img src="./assets/articles/sub2/chapter-1.webp" width="1842" height="1727" alt="업무 화면으로 AI 활용 과정을 보여주는 시안" loading="lazy" />
+            </picture>
+            <div class="article-transcript">
+              <h3>밤사이 수북이 쌓인 메신저에 당황하셨어요?</h3>
+              <p class="article-kicker">대화 요약</p>
+              <p>출근해 보니 어제 퇴근 후에도 현장 메신저 대화가 한참 이어져 있습니다. 일정 변경, 자료 요청, 협력업체 확인사항까지 한 대화방에 섞여 있네요. 대화를 다 읽고 일을 시작하려는 순간 다시 위로 올려보게 됩니다. 메신저를 읽는 것만으로도 오늘 할 일을 뽑아내는 것은 별개의 작업입니다.</p>
+              <p><strong>김 매니저의 노하우</strong> · ‘대화 요약’이 아니라 ‘오늘 업무 목록’을 요청하세요!</p>
+            </div>
+          </figure>
+          <figure class="ai-story__chapter ai-story__chapter--green">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./assets/articles/sub2/chapter-2-mobile.webp" />
+              <img src="./assets/articles/sub2/chapter-2.webp" width="1842" height="1723" alt="업무 화면으로 AI 활용 과정을 보여주는 시안" loading="lazy" />
+            </picture>
+            <div class="article-transcript">
+              <h3>협력업체에 메일 하나 보내는데… 왜 자꾸 길어지지?</h3>
+              <p class="article-kicker">메일 초안 작성</p>
+              <p>자료 보완 요청은 간단한데, 메일 쓰다 보면 배경 설명만 길어진다면? 협력업체에 기성 서류나 공사 관련 자료를 보완해달라는 메일을 보내야 합니다. 무엇이 필요한지는 명확한데, 막상 쓰기 시작하면 배경부터 길어집니다. 상대방이 메일을 열자마자 요청사항과 기한을 알 수 있게 쓰는 게 더 중요합니다.</p>
+              <p><strong>김 매니저의 노하우</strong> · ‘배경 설명’보다 ‘상대가 해야 할 일’을 먼저 요청하세요!</p>
+            </div>
+          </figure>
+          <figure class="ai-story__chapter ai-story__chapter--purple">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./assets/articles/sub2/chapter-3-mobile.webp" />
+              <img src="./assets/articles/sub2/chapter-3.webp" width="1842" height="1770" alt="업무 화면으로 AI 활용 과정을 보여주는 시안" loading="lazy" />
+            </picture>
+            <div class="article-transcript">
+              <h3>계약서·시방서·공사자료… 관련 내용이 어디였지?</h3>
+              <p class="article-kicker">정보 검색·요약</p>
+              <p>전체 요약보다 ‘이번에 확인할 기준’을 먼저 줍니다 업무 매뉴얼과 인수인계 자료는 위키에서, 프로젝트별 자료와 일정은 스페이스에서 확인할 수 있습니다. “전체를 요약해줘”보다 ‘관련 조항’, ‘비용 영향’, ‘공정 영향’처럼 확인 기준을 정해두면 원문을 어디부터 읽어야 할지 빨리 좁힐 수 있습니다.</p>
+              <p><strong>김 매니저의 노하우</strong> · 요약만 받지 않고 ‘근거 문장과 위치’까지 요청하세요!</p>
+            </div>
+          </figure>
+        </section>
+
+        <figure class="article-art ai-event">
+          <picture>
+            <source media="(max-width: 700px)" srcset="./assets/articles/sub2/event-mobile.webp" />
+            <img src="./assets/articles/sub2/event.webp" width="1920" height="1331" alt="AI 노하우 공모를 안내하는 이벤트 그래픽" loading="lazy" />
+          </picture>
+          <div class="article-transcript">
+            <h3>AI 노하우 마음껏 자랑하기!</h3>
+            <p>AI를 쓰면서</p>
+            <p>발견한 나만의 실전 활용법이 있나요?</p>
+            <p>“긴 대화에서 오늘 할 일만 뽑아요!”</p>
+            <p>“메일에는 요청자료와 기한을 먼저 넣어요!”</p>
+            <p>“우리 팀은 결재 초안을 이렇게 정리해요!”</p>
+            <p>실제 업무에서 써보고 도움이 됐던 방법을</p>
+            <p>댓글로 알려주세요.</p>
+            <p><strong>팀 노하우</strong> · 팀에서 공통으로 쓰는 기능이나 정리 기준을 알려주세요.</p>
+            <p><strong>개인 노하우</strong> · 어떤 업무에서, AI에 어떻게 요청하는지 소개해주세요.</p>
+          </div>
+        </figure>
+
+        <section class="article-feedback" aria-labelledby="article-keywords-heading">
+          <div class="article-prose">
+            <h2 id="article-keywords-heading">이 이야기의 키워드</h2>
+            <ul class="article-tags">
+              <li>#AI엑스파일</li>
+              <li>#대화요약</li>
+              <li>#메일초안</li>
+              <li>#정보검색</li>
+              <li>#AI업무활용</li>
+              <li>#실전노하우</li>
+            </ul>
+            <div class="article-reaction">
+              <p>이번 이야기는 어떠셨나요?</p>
+              <span class="article-reaction__count"><span aria-hidden="true">👍</span><span aria-label="좋아요 6개">6</span></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-discover" aria-labelledby="article-discover-heading">
+          <div class="article-prose">
+            <h2 id="article-discover-heading" lang="en">DISCOVER</h2>
+            <div class="article-discover__grid">
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/dc-platform.webp" width="326" height="213" alt="지능형 DC 플랫폼을 소개하는 구자균 회장" loading="lazy" />
+                <h3>구자균 회장, “AI 전력난 해법은 지능형 DC 배전”</h3>
+                <p>아시아 첫 CIRED 기조연설에서 지능형 DC 플랫폼의 미래를 소개합니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/history.webp" width="326" height="213" alt="LS ELECTRIC 사업장의 전경" loading="lazy" />
+                <h3>LS ELECTRIC의 역사를 가장 빠르게 살펴보는 법</h3>
+                <p>LS ELECTRIC의 기업사를 6분으로 정리한 영상입니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/pricing.webp" width="326" height="213" alt="동료와 함께 앉은 LS ELECTRIC 마케팅팀" loading="lazy" />
+                <h3>숫자 너머의 시장을 읽고, 가격을 설계하다</h3>
+                <p>사업총괄)마케팅팀 가격·데이터 Part</p>
+              </article>
+            </div>
+          </div>
+          <a class="article-top" href="#article-top" aria-label="맨 위로 이동"><span aria-hidden="true">⌃</span></a>
+        </section>
+      </article>
     </main>
+
+    <footer class="site-footer" data-footer>
+      <div class="site-footer__top">
+        <div class="site-footer__inner site-footer__top-inner">
+          <a class="site-footer__brand" href="#article-top" aria-label="E.ON 웹진 홈">
+            <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+            <span lang="en">LS ELECTRIC WEB MAGAZINE</span>
+          </a>
+          <nav class="site-footer__socials" aria-label="LS ELECTRIC 소셜 미디어">
+            <a href="https://www.linkedin.com/company/lselectric/" aria-label="LS ELECTRIC 링크드인"><img src="./assets/icon-linkedin.png" alt="" width="32" height="33" /></a>
+            <a href="https://www.youtube.com/@LSELECTRIC" aria-label="LS ELECTRIC 유튜브"><img src="./assets/icon-youtube.png" alt="" width="41" height="28" /></a>
+            <a href="https://blog.naver.com/ls-electric" aria-label="LS ELECTRIC 블로그"><img src="./assets/icon-blog.png" alt="" width="43" height="40" /></a>
+            <a href="https://www.instagram.com/lselectric_global/" aria-label="LS ELECTRIC 인스타그램"><img src="./assets/icon-instagram.png" alt="" width="43" height="44" /></a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__inner site-footer__bottom-inner">
+          <a class="site-footer__privacy" href="https://www.ls-electric.com/ko/etc/privacy">개인정보처리방침</a>
+          <p class="site-footer__copyright" lang="en">Copyright © 2021 LS ELECTRIC Co., Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

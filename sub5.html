@@ -3,13 +3,270 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>임원이 쏜다 | E.ON WEBZINE</title>
+    <meta name="description" content="채대석 대표이사가 ‘신입사원’에게 쏜다! · LS ELECTRIC E.ON 웹진" />
+    <title>채대석 대표이사가 ‘신입사원’에게 쏜다! | E.ON WEBZINE</title>
+    <link rel="icon" href="./assets/eon-logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/articles.css" />
+    <script src="./js/header.js" defer></script>
+    <script src="./js/article-summary.js" defer></script>
   </head>
-  <body>
-    <main>
-      <h1>임원이 쏜다</h1>
-      <p>페이지 준비 중입니다.</p>
-      <a href="./index.html">E.ON 웹진 메인으로</a>
+  <body class="article-page article-page--5">
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="E.ON 웹진 홈으로 이동">
+        <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+        <span lang="en">WEBZINE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
+        <a href="./main2.html#theme">Theme. On</a>
+        <a href="./main2.html#company">Company. On</a>
+        <a href="./main2.html#culture">Culture. On</a>
+        <a href="./main2.html#news">LS NEWS+</a>
+        <a href="#event-popup" aria-haspopup="dialog" aria-controls="event-popup" data-event-open>EVENT</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-button notification-button" href="./main2.html#news" aria-label="새 소식 보기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+          </svg>
+          <span class="notification-dot" aria-hidden="true"></span>
+        </a>
+        <button class="icon-button search-button" type="button" aria-label="검색" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="7.3" />
+            <path d="m16.2 16.2 5 5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="event-dialog" id="event-popup" aria-labelledby="event-popup-title" data-event-popup>
+      <div class="event-drawer">
+        <div class="event-panel">
+          <h2 class="visually-hidden" id="event-popup-title">AI 동료 밸런스</h2>
+          <img class="event-panel__image" src="./assets/event-preview.png" width="1593" height="1622" alt="AI에게 말할 때, 나는? 반말파 대 존댓말파. 시안에 표시된 결과는 47% 대 53%이며 참여 인원은 1,286명입니다." />
+          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus></button>
+        </div>
+        <button class="event-tab" type="button" aria-label="이벤트 닫기" data-event-close><span>EVENT</span></button>
+      </div>
+    </dialog>
+
+    <main id="article-top">
+      <article aria-labelledby="article-title">
+        <section class="article-hero article-hero--feature article-hero--welcome" aria-labelledby="article-title">
+          <img class="article-hero__image" src="./assets/articles/sub5/hero.webp" width="1920" height="804" alt="신입사원과 간식을 나누며 이야기하는 채대석 대표이사" fetchpriority="high" />
+          <div class="article-hero__inner">
+            <div class="article-hero__eyebrow"><span>임원이 쏜다</span><span>Company. On</span></div>
+            <h1 id="article-title">채대석 대표이사가<br />‘신입사원’에게 쏜다!</h1>
+            <p class="article-hero__subtitle">입사 첫 달, 신입사원에게 전한 웰컴 간식 박스</p>
+            <div class="article-hero__bottom">
+              <time datetime="2026-10-06">2026.10.06</time>
+              <div class="article-hero__actions" role="group" aria-label="기사 도구">
+                <div class="article-summary" data-summary>
+                  <button class="article-tool article-tool--summary" type="button" aria-expanded="false" aria-controls="article-summary-panel" data-summary-toggle>
+                    <img src="./assets/articles/sub-ai-white.png" width="24" height="24" alt="" />
+                    <span>AI 요약</span>
+                  </button>
+                  <section class="article-summary__panel" id="article-summary-panel" aria-labelledby="article-summary-heading" tabindex="-1" hidden inert data-summary-panel>
+                    <button class="article-summary__close" type="button" aria-label="AI 요약 닫기" data-summary-close><span aria-hidden="true"></span><span aria-hidden="true"></span></button>
+                    <div class="article-summary__content">
+                      <h2 id="article-summary-heading"><img src="./assets/articles/sub-ai-purple.png" width="24" height="24" alt="" />AI 요약 | 채대석 대표이사의 신입사원 환영 인사</h2>
+                      <p>채대석 대표이사가 입사 첫 달을 보내는 신입사원들에게 웰컴 간식 박스와 응원 편지를 보냈다. 5문 5답에서는 첫 출근의 기억과 현장을 직접 확인하는 업무 습관을 돌아보고, 모르는 것은 질문하고 작은 일에도 책임을 다하라는 조언을 전한다. 신입사원들은 동료와 간식을 나누며 한숨 돌리고 서로 가까워진 순간을 들려준다.</p>
+                    </div>
+                  </section>
+                </div>
+                <button class="article-tool article-tool--share" type="button" aria-label="공유" aria-disabled="true" tabindex="-1">
+                  <img src="./assets/articles/sub-share-white.png" width="30" height="30" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="welcome-section">
+          <header class="article-split welcome-intro">
+            <p class="article-kicker">A LITTLE WELCOME</p>
+            <p>사원증을 목에 걸고도 출입구 앞에만 서면 한 번씩 멈칫하게 되는 입사 첫 달. 떨리는 마음을 안은 채 정신없는 하루를 보내고 있을 신입사원들에게 채대석 대표이사가 웰컴 간식 박스를 보냈습니다. 모든 게 낯선 신입사원들에게 그날의 간식 시간은 어떤 기억으로 남았을까요?</p>
+          </header>
+          <section class="welcome-letter article-split">
+            <figure class="welcome-letter__portrait">
+              <img src="./assets/articles/sub5/portrait.webp" width="534" height="671" alt="채대석 LS ELECTRIC 대표이사를 표현한 흑백 시안" loading="lazy" />
+            </figure>
+            <div class="welcome-letter__text">
+              <p class="article-kicker">A LETTER TO YOU</p>
+              <h2>함께 일하게 되어<br />반갑습니다<em>.</em></h2>
+              <p>신입사원 여러분께.</p>
+              <p>회사의 미래를 열어갈 여러분, 회사 생활은 조금씩 익숙해지고 있나요? 처음 만나는 동료들 이름을 익히고 새로운 일을 배우다 보면 하루가 금방 지나가죠.</p>
+              <p>한 달간 어떻게 지내셨는지 궁금하기도 하고, 응원의 마음도 전하고 싶어 소소한 간식 박스를 준비했습니다. 간식 드시며 잠시나마 쉬어 가셨으면 좋겠네요. 함께 일하게 되어 반갑습니다.</p>
+              <p class="welcome-letter__sign">채대석 드림</p>
+            </div>
+          </section>
+          <p class="article-caption welcome-image-note">인물·현장 사진은 촬영 구도와 분위기를 제안하는 시안용 AI 이미지입니다.</p>
+        </section>
+
+        <section class="welcome-qa">
+          <div class="welcome-section article-split">
+            <header class="welcome-qa__lead">
+              <p class="article-kicker">FIVE QUESTIONS</p>
+              <h2>채대석 대표이사의<br />5문 5답 타임</h2>
+              <p>일의 원칙부터 첫 출근의 기억까지.<br />조금 먼저 시작한 선배의 이야기를 듣습니다.</p>
+              <blockquote>모르는 것은<br />부끄러워하지 말고<br />질문하세요.</blockquote>
+            </header>
+            <div class="welcome-qa__list">
+              <article class="welcome-qa__item">
+                <h3><span>Q1</span>요즘 대표님이 가장 많은 시간을 쓰는 일은 무엇인가요?</h3>
+                <p>요즘은 급변하는 글로벌 전력 시장의 흐름을 살피고, LS ELECTRIC이 앞으로 어떤 경쟁력을 갖춰야 할지 고민하는 데 많은 시간을 써요. 산업 성장과 함께 전력 인프라의 중요성이 그 어느 때보다 커지고 있죠. 우리가 가진 기술력과 경험을 바탕으로 새로운 기회를 만들어 내고 글로벌 시장에서 한 단계 더 도약할 수 있는 방향을 고민하고 있습니다.</p>
+              </article>
+              <article class="welcome-qa__item">
+                <h3><span>Q2</span>첫 출근 날, 지금도 기억나는 일화가 있나요?</h3>
+                <p>그때의 설렘과 긴장감은 지금도 기억에 남습니다. 새로운 조직에서 인정받고 싶다는 마음과 함께 맡은 일을 잘 해낼 수 있을까 하는 걱정도 있었던 것 같죠. 돌이켜보면 처음부터 모든 걸 잘할 수는 없었습니다. 주변 동료와 선배들에게 배우고 직접 부딪히며 하나씩 익혀 간 시간이 지금의 저를 만들었다고 생각해요.</p>
+              </article>
+              <article class="welcome-qa__item">
+                <h3><span>Q3</span>신입 시절 가장 어려웠던 일은요?</h3>
+                <p>업무에 대한 이해와 경험이 부족한 상태에서 스스로 답을 찾아야 하는 순간이 어려웠죠. 특히 회사 업무는 혼자 잘하는 것만으로 해결되지 않는 일이 많습니다. 여러 부서와 협업하고 서로 다른 의견을 조율하는 과정도 쉽지 않았죠.</p>
+              </article>
+              <article class="welcome-qa__item">
+                <h3><span>Q4</span>신입 때부터 지금까지 이어온 업무 습관이 있다면요?</h3>
+                <p>어떤 일이든 현장을 살피고 기본과 원칙을 지키려는 습관입니다. 보고서나 숫자만으로는 알 수 없는 것이 현장에는 많이 있어요. 특히 우리 회사는 전력, 자동화 산업 특성상 품질과 안전이 무엇보다 중요합니다. 작은 부분이라도 직접 확인하고 끝까지 책임지는 자세는 지금까지도 중요하게 여기는 업무 원칙입니다.</p>
+              </article>
+              <article class="welcome-qa__item">
+                <h3><span>Q5</span>마지막으로 신입사원을 위한 회사 생활 꿀팁을 전해 주세요.</h3>
+                <p>첫째, 모르는 것은 부끄러워하지 말고 질문하세요. 질문하는 만큼 배우고 성장할 수 있습니다. 둘째, 작은 일에도 책임감을 가지세요. 작은 업무를 대하는 태도가 결국 큰 업무를 맡을 수 있는 신뢰로 이어집니다. 셋째, 주변 동료들과 좋은 관계를 만들어 가세요. 회사 생활은 혼자 하는 것이 아니라 함께 성과를 만들어 가는 과정입니다.</p>
+                <p>마지막으로 한 가지 더 이야기하고 싶습니다. 여러분이 지금 배우고 경험하는 모든 것이 회사의 미래 경쟁력이 될 수 있습니다. 조급해하지 말고 자신만의 강점을 키워 나가세요. 여러분의 도전과 성장이 LS ELECTRIC의 더 큰 미래를 만들어 갈 것이라고 믿습니다.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="welcome-section welcome-moments">
+          <header class="welcome-moments__head article-split">
+            <div class="welcome-moments__title">
+              <p class="article-kicker">WELCOME MOMENTS</p>
+              <h2>간식 박스,<br />잘 받았습니다<em>!</em></h2>
+            </div>
+            <p>한 상자의 간식이 도착하고,<br />우리의 오후가 조금 더 다정해졌습니다.</p>
+          </header>
+          <div class="welcome-moments__grid">
+            <article class="welcome-moment">
+              <img src="./assets/articles/sub5/share.webp" width="465" height="475" alt="함께 나누는 오후" loading="lazy" />
+              <h3>함께 나누는 오후</h3>
+              <blockquote>“옆자리 선배한테도 하나 건넸는데 선배가 ‘나 신입 땐 오후만 되면 배고팠어’라고 하시더라고요. 덕분에 선배의 신입 시절 이야기까지 들었습니다. 간식 잘 먹었습니다 대표님!”</blockquote>
+              <p class="article-caption">사업총괄)마케팅팀 · <strong>이유림</strong></p>
+            </article>
+            <article class="welcome-moment">
+              <img src="./assets/articles/sub5/thanks.webp" width="564" height="404" alt="응원까지, 잘 받았습니다" loading="lazy" />
+              <h3>응원까지, 잘 받았습니다</h3>
+              <blockquote>“간식도 좋았지만 대표님의 응원 한마디가 더 기억에 남네요. 회사에 오면 허둥지둥하기 바쁜데 먼저 반겨 주시는 말을 들으니 기분이 좋습니다. 감사합니다.”</blockquote>
+              <p class="article-caption">CTO)디자인랩 · <strong>윤상이</strong></p>
+            </article>
+            <article class="welcome-moment">
+              <img src="./assets/articles/sub5/snacks.webp" width="366" height="282" alt="달콤한 재충전" loading="lazy" />
+              <h3>달콤한 재충전</h3>
+              <blockquote>“상자를 열자마자 그날 깔끔히 헤치웠습니다. 오후에 쏟아지는 졸음 때문에 많이 힘든데, 이날은 간식 먹으며 제대로 쉬고 제대로 일했습니다. 대표님 덕분에 뜻깊은 시간이었습니다.”</blockquote>
+              <p class="article-caption">CPO)구매공정팀 CS파트 · <strong>서유진</strong></p>
+            </article>
+            <article class="welcome-moment">
+              <img src="./assets/articles/sub5/colleagues.webp" width="366" height="390" alt="일 이야기 말고, 우리 이야기" loading="lazy" />
+              <h3>일 이야기 말고, 우리 이야기</h3>
+              <blockquote>“쉬는 시간에 사수 님이랑 간식을 나눠 먹었어요. 평소엔 제가 일 배우느라 질문만 하는데 그날은 사수 님과 다양한 이야기 두런두런 나눴네요. 덕분에 잠깐이나마 일 얘기 없이 웃고 쉬었어요. 감사합니다!”</blockquote>
+              <p class="article-caption">청주)생산기술팀 양산파트 · <strong>김민철</strong></p>
+            </article>
+            <article class="welcome-moment">
+              <img src="./assets/articles/sub5/desk.webp" width="366" height="282" alt="두 번 선물 받은 기분" loading="lazy" />
+              <h3>두 번 선물 받은 기분</h3>
+              <blockquote>“받자마자 몇 개는 서랍에 넣어 뒀어요. 며칠 뒤 정신없는 오후에 그게 생각나서 꺼내 먹었는데, 그때 한 번 더 선물 받은 기분이었습니다. 덕분에 두 번 잘 먹었습니다 대표님!”</blockquote>
+              <p class="article-caption">생산/R&amp;D)변압기QS팀 · <strong>김강민</strong></p>
+            </article>
+          </div>
+        </section>
+
+        <section class="welcome-next">
+          <div class="welcome-section article-split">
+            <div class="welcome-next__copy">
+              <p class="article-kicker">NEXT EVENT</p>
+              <h2>강화영 이사가<br />‘워킹맘&amp;대디’를 위해 쏜다!</h2>
+              <p>공감과 소통의 달인, 강화영 이사가</p>
+              <p>워킹맘&amp;대디를 위해 특별한 간식을 준비했습니다!</p>
+              <p>회사에서는 일하랴, 집에서는 육아하랴! 하루 24시간이 모자란 워킹맘&amp;대디 여러분, 일과 육아 사이에서 고군분투하는 여러분의 이야기를 들려주세요.</p>
+              <p>공감 가득한 사연을 기다립니다!</p>
+              <span class="article-mock-button">신청하기<span aria-hidden="true">＋</span></span>
+            </div>
+            <figure class="welcome-next__photo">
+              <img src="./assets/articles/sub5/next.webp" width="513" height="524" alt="다음 이벤트에서 준비한 간식 박스" loading="lazy" />
+            </figure>
+          </div>
+        </section>
+
+        <section class="article-feedback" aria-labelledby="article-keywords-heading">
+          <div class="article-prose">
+            <h2 id="article-keywords-heading">이 이야기의 키워드</h2>
+            <ul class="article-tags">
+              <li>#채대석대표</li>
+              <li>#신입사원</li>
+              <li>#웰컴간식</li>
+              <li>#환영인사</li>
+              <li>#응원</li>
+              <li>#신입꿀팁</li>
+              <li>#기본원칙</li>
+            </ul>
+            <div class="article-reaction">
+              <p>이번 이야기는 어떠셨나요?</p>
+              <span class="article-reaction__count"><span aria-hidden="true">👍</span><span aria-label="좋아요 6개">6</span></span>
+            </div>
+          </div>
+        </section>
+
+        <section class="article-discover" aria-labelledby="article-discover-heading">
+          <div class="article-prose">
+            <h2 id="article-discover-heading" lang="en">DISCOVER</h2>
+            <div class="article-discover__grid">
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/dc-platform.webp" width="326" height="213" alt="지능형 DC 플랫폼을 소개하는 구자균 회장" loading="lazy" />
+                <h3>구자균 회장, “AI 전력난 해법은 지능형 DC 배전”</h3>
+                <p>아시아 첫 CIRED 기조연설에서 지능형 DC 플랫폼의 미래를 소개합니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/history.webp" width="326" height="213" alt="LS ELECTRIC 사업장의 전경" loading="lazy" />
+                <h3>LS ELECTRIC의 역사를 가장 빠르게 살펴보는 법</h3>
+                <p>LS ELECTRIC의 기업사를 6분으로 정리한 영상입니다.</p>
+              </article>
+              <article class="article-discover__card">
+                <img src="./assets/articles/discover/pricing.webp" width="326" height="213" alt="동료와 함께 앉은 LS ELECTRIC 마케팅팀" loading="lazy" />
+                <h3>숫자 너머의 시장을 읽고, 가격을 설계하다</h3>
+                <p>사업총괄)마케팅팀 가격·데이터 Part</p>
+              </article>
+            </div>
+          </div>
+          <a class="article-top" href="#article-top" aria-label="맨 위로 이동"><span aria-hidden="true">⌃</span></a>
+        </section>
+      </article>
     </main>
+
+    <footer class="site-footer" data-footer>
+      <div class="site-footer__top">
+        <div class="site-footer__inner site-footer__top-inner">
+          <a class="site-footer__brand" href="#article-top" aria-label="E.ON 웹진 홈">
+            <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+            <span lang="en">LS ELECTRIC WEB MAGAZINE</span>
+          </a>
+          <nav class="site-footer__socials" aria-label="LS ELECTRIC 소셜 미디어">
+            <a href="https://www.linkedin.com/company/lselectric/" aria-label="LS ELECTRIC 링크드인"><img src="./assets/icon-linkedin.png" alt="" width="32" height="33" /></a>
+            <a href="https://www.youtube.com/@LSELECTRIC" aria-label="LS ELECTRIC 유튜브"><img src="./assets/icon-youtube.png" alt="" width="41" height="28" /></a>
+            <a href="https://blog.naver.com/ls-electric" aria-label="LS ELECTRIC 블로그"><img src="./assets/icon-blog.png" alt="" width="43" height="40" /></a>
+            <a href="https://www.instagram.com/lselectric_global/" aria-label="LS ELECTRIC 인스타그램"><img src="./assets/icon-instagram.png" alt="" width="43" height="44" /></a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__inner site-footer__bottom-inner">
+          <a class="site-footer__privacy" href="https://www.ls-electric.com/ko/etc/privacy">개인정보처리방침</a>
+          <p class="site-footer__copyright" lang="en">Copyright © 2021 LS ELECTRIC Co., Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

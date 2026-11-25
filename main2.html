@@ -3,13 +3,224 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E.ON 웹진 메인 2 | E.ON WEBZINE</title>
+    <meta name="theme-color" content="#f4f4f4" />
+    <meta name="description" content="LS ELECTRIC E.ON 웹진, AI × 남다른 안목 = Spark" />
+    <title>E.ON WEBZINE | AI × 남다른 안목 = Spark</title>
+    <link rel="icon" href="./assets/eon-logo.png" type="image/png" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main2.css" />
+    <script src="./js/header.js" defer></script>
+    <script src="./js/main2.js" defer></script>
   </head>
-  <body>
+  <body class="main2-page">
+    <header class="site-header" data-header>
+      <a class="brand" href="./index.html" aria-label="E.ON 웹진 메인 1로 이동">
+        <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+        <span lang="en">WEBZINE</span>
+      </a>
+      <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false" data-menu-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
+        <a href="#theme">Theme. On</a>
+        <a href="#company">Company. On</a>
+        <a href="#culture">Culture. On</a>
+        <a href="#news">LS NEWS+</a>
+        <a href="#event-popup" aria-haspopup="dialog" aria-controls="event-popup" data-event-open>EVENT</a>
+      </nav>
+      <div class="header-actions">
+        <a class="icon-button notification-button" href="#news" aria-label="새 소식 보기">
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9M10 21h4" />
+          </svg>
+          <span class="notification-dot" aria-hidden="true"></span>
+        </a>
+        <button class="icon-button search-button" type="button" aria-label="검색" disabled>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <circle cx="10.8" cy="10.8" r="7.3" />
+            <path d="m16.2 16.2 5 5" />
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <dialog class="event-dialog" id="event-popup" aria-labelledby="event-popup-title" data-event-popup>
+      <div class="event-drawer">
+        <div class="event-panel">
+          <h2 class="visually-hidden" id="event-popup-title">AI 동료 밸런스</h2>
+          <img class="event-panel__image" src="./assets/event-preview.png" width="1593" height="1622" alt="AI에게 말할 때, 나는? 반말파 대 존댓말파. 시안에 표시된 결과는 47% 대 53%이며 참여 인원은 1,286명입니다." />
+          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus></button>
+        </div>
+        <button class="event-tab" type="button" aria-label="이벤트 닫기" data-event-close><span>EVENT</span></button>
+      </div>
+    </dialog>
+
     <main>
-      <h1>E.ON 웹진 메인 2</h1>
-      <p>페이지 준비 중입니다.</p>
-      <a href="./index.html">E.ON 웹진 메인으로</a>
+      <section class="main2-hero" id="hero" aria-labelledby="main2-heading">
+        <h1 class="visually-hidden" id="main2-heading">AI × 남다른 안목 = Spark</h1>
+        <video class="main2-hero__art" width="1680" height="720" poster="./assets/main2/hero.webp" muted loop playsinline preload="metadata" aria-hidden="true">
+          <source src="./assets/main2/hero.mp4" type="video/mp4" />
+        </video>
+      </section>
+      <section class="main2-special" id="theme" aria-labelledby="main2-theme-heading">
+        <h2 id="main2-theme-heading" lang="en">THEME. ON</h2>
+        <div class="main2-special__grid">
+          <a class="main2-special__card" href="./sub1.html" aria-labelledby="main2-theme-1" aria-describedby="main2-theme-copy-1">
+            <img class="main2-special__photo" src="./assets/main2/theme-discerning.webp" width="680" height="897" alt="주황색 렌즈가 들어간 검은 안경" loading="lazy" />
+            <h3 class="main2-special__title" id="main2-theme-1">남다른 안목</h3>
+            <div class="main2-special__detail" id="main2-theme-copy-1">
+              <span class="main2-special__category" aria-hidden="true">남다른 안목</span>
+              <p>AI의 가능성에<br />인간의 안목을 더하다</p>
+              <p>경험과 판단이 만드는<br />한 끗의 차이</p>
+            </div>
+            <span class="main2-special__more" aria-hidden="true"></span>
+          </a>
+          <a class="main2-special__card" href="./sub2.html" aria-labelledby="main2-theme-2" aria-describedby="main2-theme-copy-2">
+            <img class="main2-special__photo" src="./assets/main2/theme-ai.webp" width="680" height="897" alt="노트북을 보는 구성원" loading="lazy" />
+            <h3 class="main2-special__title" id="main2-theme-2">AI X파일</h3>
+            <div class="main2-special__detail" id="main2-theme-copy-2">
+              <span class="main2-special__category" aria-hidden="true">AI X파일</span>
+              <p>AI로<br />업무 디테일 UP</p>
+              <p>김 매니저의<br />실전 사용법</p>
+            </div>
+            <span class="main2-special__more" aria-hidden="true"></span>
+          </a>
+          <a class="main2-special__card" href="./sub3.html" aria-labelledby="main2-theme-3" aria-describedby="main2-theme-copy-3">
+            <img class="main2-special__photo" src="./assets/main2/theme-perspective.webp" width="680" height="897" alt="빛이 비치는 계단 위의 금속 구체" loading="lazy" />
+            <span class="main2-special__event">EVENT</span>
+            <h3 class="main2-special__title" id="main2-theme-3">1%의 힘</h3>
+            <div class="main2-special__detail" id="main2-theme-copy-3">
+              <span class="main2-special__category" aria-hidden="true">1%의 힘</span>
+              <p>남다른 안목<br />Visionary</p>
+              <p>익숙한 일상에서<br />새로운 가치를 발견하다</p>
+            </div>
+            <span class="main2-special__more" aria-hidden="true"></span>
+          </a>
+        </div>
+      </section>
+
+      <section class="main2-stories" id="company" aria-labelledby="main2-company-heading">
+        <h2 id="main2-company-heading" lang="en">COMPANY. ON</h2>
+        <div class="main2-stories__grid">
+          <a class="main2-story" href="./sub4.html">
+            <div class="main2-story__thumbnail">
+              <img src="./assets/main2/company-team.webp" width="850" height="543" alt="야외 계단에 모인 LS ELECTRIC 팀원들" loading="lazy" />
+              <span class="main2-story__category">Together Event</span>
+            </div>
+            <h3>팀캐를 찾아라!</h3>
+            <div class="main2-story__tags"><span>#자기계발</span><span>#이벤트</span></div>
+          </a>
+          <a class="main2-story" href="./sub5.html">
+            <div class="main2-story__thumbnail">
+              <img src="./assets/main2/company-leader.webp" width="850" height="543" alt="간식을 앞에 두고 이야기를 나누는 동료와 임원" loading="lazy" />
+              <span class="main2-story__category">홈베이킹</span>
+            </div>
+            <h3>임원이 쏜다</h3>
+            <div class="main2-story__tags"><span>#마카롱</span><span>#홈베이킹</span></div>
+          </a>
+          <a class="main2-story" href="./sub6.html">
+            <div class="main2-story__thumbnail">
+              <img src="./assets/main2/company-heroes.webp" width="850" height="543" alt="공장 앞에 모인 LS 히어로즈 마스코트" loading="lazy" />
+              <span class="main2-story__category">동료와 함께</span>
+            </div>
+            <h3>히어로즈의 은밀한 출장</h3>
+            <div class="main2-story__tags"><span>#크로스핏</span><span>#건강</span></div>
+          </a>
+        </div>
+      </section>
+
+      <section class="main2-stories main2-stories--culture" id="culture" aria-labelledby="main2-culture-heading">
+        <h2 id="main2-culture-heading" lang="en">CULTURE. ON</h2>
+        <div class="main2-stories__grid">
+          <a class="main2-story" href="./sub7.html">
+            <div class="main2-story__thumbnail">
+              <img src="./assets/company-comic.webp" width="808" height="569" alt="노란 배경에 배치한 크로스 체크 만화" loading="lazy" />
+              <span class="main2-story__category">E.ON 퀴즈</span>
+            </div>
+            <h3>오싹 주의보</h3>
+            <div class="main2-story__tags"><span>#E.ON퀴즈</span><span>#이벤트</span></div>
+          </a>
+          <article class="main2-story">
+            <div class="main2-story__thumbnail">
+              <img src="./assets/main2/culture-donation.webp" width="850" height="543" alt="고향사랑기부제 안내 카드를 건네는 손" loading="lazy" />
+              <span class="main2-story__category">생활 정보</span>
+            </div>
+            <h3>지역경제 살리고 세액공제도 받는 ‘고향사랑기부제’</h3>
+            <div class="main2-story__tags"><span>#고향사랑</span><span>#지역경제</span></div>
+          </article>
+          <article class="main2-story">
+            <div class="main2-story__thumbnail">
+              <img src="./assets/main2/culture-museum.webp" width="850" height="543" alt="원형 천장 아래로 보이는 전시 작품" loading="lazy" />
+              <span class="main2-story__category">취미 이야기</span>
+            </div>
+            <h3>이학송 매니저가 좋아하는 전시회&amp;박물관 관람 이야기</h3>
+            <div class="main2-story__tags"><span>#전시회</span><span>#취미</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="main2-news" id="news" aria-labelledby="main2-news-heading">
+        <h2 id="main2-news-heading" lang="en">LS NEWS+</h2>
+        <div class="main2-news__grid">
+          <article class="main2-story">
+            <div class="main2-story__thumbnail main2-news__thumbnail">
+              <img src="./assets/main2/news-hvdc.webp" width="850" height="556" alt="LS ELECTRIC과 GE버노바의 합작법인 설립 협약식" loading="lazy" />
+            </div>
+            <h3>LS ELECTRIC, GE버노바와 전압형 HVDC 합작법인 설립</h3>
+            <div class="main2-story__tags"><time datetime="2026-10-07">2026.10.07</time></div>
+          </article>
+          <article class="main2-story">
+            <div class="main2-story__thumbnail main2-news__thumbnail">
+              <img src="./assets/main2/news-results.webp" width="850" height="556" alt="LS ELECTRIC 스마트팩토리 외관" loading="lazy" />
+            </div>
+            <h3>LS ELECTRIC, 사상 최대 실적으로 100분기 연속 흑자 ‘금자탑’</h3>
+            <div class="main2-story__tags"><time datetime="2026-09-21">2026.09.21</time></div>
+          </article>
+          <article class="main2-story">
+            <div class="main2-story__thumbnail main2-news__thumbnail">
+              <img src="./assets/main2/news-robot.webp" width="850" height="556" alt="공장 현장을 점검하는 4족 보행로봇과 구성원들" loading="lazy" />
+            </div>
+            <h3>LS ELECTRIC, 4족 보행로봇으로 스마트팩토리 고도화 나선다</h3>
+            <div class="main2-story__tags"><time datetime="2026-09-11">2026.09.11</time></div>
+          </article>
+          <article class="main2-story">
+            <div class="main2-story__thumbnail main2-news__thumbnail">
+              <img src="./assets/main2/news-datacenter.webp" width="850" height="556" alt="LS ELECTRIC 데이터센터 솔루션 전시 부스" loading="lazy" />
+            </div>
+            <h3>LS ELECTRIC, 데이터센터 패키지 솔루션으로 아세안 시장 정조준</h3>
+            <div class="main2-story__tags"><time datetime="2026-09-28">2026.09.28</time></div>
+          </article>
+        </div>
+      </section>
     </main>
+
+    <a class="back-to-top main2-top" href="#hero" aria-label="맨 위로 이동" data-main2-top hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V3m-8 8 8-8 8 8" /></svg>
+      <span>TOP</span>
+    </a>
+
+    <footer class="site-footer" data-footer>
+      <div class="site-footer__top">
+        <div class="site-footer__inner site-footer__top-inner">
+          <a class="site-footer__brand" href="#hero" aria-label="E.ON 웹진 홈">
+            <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
+            <span lang="en">LS ELECTRIC WEB MAGAZINE</span>
+          </a>
+          <nav class="site-footer__socials" aria-label="LS ELECTRIC 소셜 미디어">
+            <a href="https://www.linkedin.com/company/lselectric/" aria-label="LS ELECTRIC 링크드인"><img src="./assets/icon-linkedin.png" alt="" width="32" height="33" /></a>
+            <a href="https://www.youtube.com/@LSELECTRIC" aria-label="LS ELECTRIC 유튜브"><img src="./assets/icon-youtube.png" alt="" width="41" height="28" /></a>
+            <a href="https://blog.naver.com/ls-electric" aria-label="LS ELECTRIC 블로그"><img src="./assets/icon-blog.png" alt="" width="43" height="40" /></a>
+            <a href="https://www.instagram.com/lselectric_global/" aria-label="LS ELECTRIC 인스타그램"><img src="./assets/icon-instagram.png" alt="" width="43" height="44" /></a>
+          </nav>
+        </div>
+      </div>
+      <div class="site-footer__bottom">
+        <div class="site-footer__inner site-footer__bottom-inner">
+          <a class="site-footer__privacy" href="https://www.ls-electric.com/ko/etc/privacy">개인정보처리방침</a>
+          <p class="site-footer__copyright" lang="en">Copyright © 2021 LS ELECTRIC Co., Ltd. All Rights Reserved.</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
