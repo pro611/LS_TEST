@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="./css/articles.css" />
     <script src="./js/header.js" defer></script>
     <script src="./js/article-summary.js" defer></script>
+    <script src="./js/article-tooltip.js" defer></script>
+    <script src="./js/article-sound.js" defer></script>
   </head>
   <body class="article-page article-page--6">
-    <header class="site-header" data-header>
-      <a class="brand" href="./index.html" aria-label="E.ON 웹진 홈으로 이동">
+    <header class="site-header is-light" data-header>
+      <a class="brand" href="./main2.html" aria-label="E.ON 웹진 메인 2로 이동">
         <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
         <span lang="en">WEBZINE</span>
       </a>
@@ -22,7 +24,7 @@
         <span></span>
       </button>
       <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
-        <a href="./main2.html#theme">Theme. On</a>
+        <a href="./arc.html">Theme. On</a>
         <a href="./main2.html#company">Company. On</a>
         <a href="./main2.html#culture">Culture. On</a>
         <a href="./main2.html#news">LS NEWS+</a>
@@ -96,19 +98,16 @@
             <img src="./assets/articles/sub6/arrival.webp" width="1240" height="670" alt="청주사업장 안에서 LS 자동 운반차를 올려다보는 히어로즈" loading="lazy" />
           </figure>
 
-          <section class="article-prose article-chapter">
-            <h2><span class="article-chapter__number">01 <span aria-hidden="true">|</span></span> LS ELECTRIC 청주사업장에서는 무엇을 만들까?</h2>
-            <p>청주사업장에 들어선 볼트의 머리띠가 연신 반짝였다. 공장 곳곳에서 전기를 안전하게 제어하는 전력기기가 만들어지고 있었기 때문이다. 이곳에서는 MCCB·ACB·VCB 같은 차단기부터 수배전반, 몰드변압기, GIS 등 다양한 전력기기와 시스템 설비를 생산한다. 이름은 조금 어렵지만 하는 일은 분명하다. 전기가 필요한 곳까지 안정적으로 흐르도록 돕고, 이상이 생기면 빠르게 끊어 사람과 설비를 보호하는 것이다. 볼트가 차단기 앞에서 고개를 끄덕였다. “전기를 잘 보내는 것만큼, 잘 멈추게 하는 것도 중요하군.”</p>
-            <aside class="heroes-terms">
-              <div class="heroes-terms__item">
-                <h3>MCCB · 배선용 차단기</h3>
-                <p>MCCB : Molded Case Circuit Breaker의 약자. 과전류나 단락이 발생했을 때 회로를 차단해 전기설비를 보호하는 배선용차단기다. ACB : Vacuum Circuit Breaker의 약자. 진공 상태에서 전류를 안전하게 차단하는 고압용 차단기다.</p>
-              </div>
-              <div class="heroes-terms__item">
-                <h3>전력 제어 설비</h3>
-                <p>외부에서 들어온 전기를 받아 필요한 곳으로 나누어 보내고, 전력의 상태를 제어·보호하는 설비다.</p>
-              </div>
-            </aside>
+          <section class="article-prose article-chapter article-chapter--terms" aria-labelledby="heroes-products-heading">
+            <h2 id="heroes-products-heading"><span class="article-chapter__number">01 <span aria-hidden="true">|</span></span> LS ELECTRIC 청주사업장에서는 무엇을 만들까?</h2>
+            <p>
+              청주사업장에 들어선 볼트의 머리띠가 연신 반짝였다. 공장 곳곳에서 전기를 안전하게 제어하는 전력기기가 만들어지고 있었기 때문이다. 이곳에서는
+              <button class="article-term" type="button" aria-describedby="term-mccb" data-term>MCCB</button>·<button class="article-term" type="button" aria-describedby="term-acb" data-term>ACB</button>·<button class="article-term" type="button" aria-describedby="term-vcb" data-term>VCB</button>
+              같은 차단기부터 <button class="article-term" type="button" aria-describedby="term-switchboard" data-term>수배전반</button>,
+              <button class="article-term" type="button" aria-describedby="term-transformer" data-term>몰드변압기</button>,
+              <button class="article-term" type="button" aria-describedby="term-gis" data-term>GIS</button> 등 다양한 전력기기와 시스템 설비를 생산한다.
+              이름은 조금 어렵지만 하는 일은 분명하다. 전기가 필요한 곳까지 안정적으로 흐르도록 돕고, 이상이 생기면 빠르게 끊어 사람과 설비를 보호하는 것이다. 볼트가 차단기 앞에서 고개를 끄덕였다. “전기를 잘 보내는 것만큼, 잘 멈추게 하는 것도 중요하군.”
+            </p>
             <p>사람에게는 제품 한 대지만 히어로즈에게는 거대한 전력 도시다. 볼트는 차단기 사이를 날며 전기의 길을 살폈고, 에코는 설비마다 얼마나 효율적으로 에너지를 사용하는지 유심히 들여다봤다. 그사이 히로는 이동 중인 물류로봇에 살짝 올라탔다. “잠깐만 타려던 건데, 이 친구 길을 너무 잘 알잖아?” 로봇이 정확한 위치에 멈추자 히로는 망토를 털며 태연하게 내려왔다.</p>
           </section>
 
@@ -116,17 +115,52 @@
             <img src="./assets/articles/sub6/tour.webp" width="1240" height="740" alt="LS 자동 운반차와 청주사업장 생산라인을 둘러보는 볼트" loading="lazy" />
           </figure>
 
-          <figure class="article-prose sound-quiz">
-            <img src="./assets/articles/sub6/sound.webp" width="652" height="685" alt="HEROES SOUND. 청주사업장의 작동음을 알아보는 소리 퀴즈 시안" loading="lazy" />
-            <div class="article-transcript">
-              <h3>히어로즈가 청주사업장에서 들은 소리는?</h3>
-              <p>① 대형 커피머신이 주문을 처리하는 소리</p>
-              <p>② 전력기기 조립·검사설비와 물류로봇이 움직이는 소리</p>
-              <p>③ 볼트가 번개를 충전하는 소리</p>
-              <p>④ 에코의 배꼽시계</p>
-              <p>정답 : ② 이 소리는 생산설비와 물류로봇이 각자의 공정을 수행하는 작동음입니다.</p>
+          <section class="sound-quiz" aria-labelledby="heroes-sound-title">
+            <h2 id="heroes-sound-title">
+              <img src="./assets/articles/sub6/sound-headphones.png" width="40" height="38" alt="" loading="lazy" />
+              <span lang="en">HEROES SOUND</span>
+            </h2>
+            <p class="sound-quiz__prompt">히어로즈가 청주사업장에서 들은 소리는?<br />무슨 소리일까요?</p>
+            <audio src="./assets/articles/sub6/fac_sound.mp3" preload="metadata" data-sound-audio></audio>
+            <div class="sound-player">
+              <div class="sound-player__controls" role="group" aria-label="소리 재생 도구">
+                <button type="button" class="sound-player__button" aria-label="소리 정지" data-sound-stop>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h5v16H5zm9 0h5v16h-5z" /></svg>
+                </button>
+                <button type="button" class="sound-player__button" aria-label="소리 재생" aria-pressed="false" data-sound-play>
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m5 3 16 9-16 9z" /></svg>
+                </button>
+                <label class="sound-player__volume">
+                  <svg viewBox="0 0 28 28" aria-hidden="true">
+                    <path d="M3 10h5l7-6v20l-7-6H3z" />
+                    <path class="sound-player__speaker-lines" d="M19 9q6 5 0 10m3-14q11 9 0 18" />
+                  </svg>
+                  <span class="visually-hidden">소리 볼륨</span>
+                  <input type="range" min="0" max="1" step="0.01" value="0.7" data-sound-volume />
+                </label>
+              </div>
+              <div class="sound-player__wave" aria-hidden="true">
+                <svg viewBox="0 0 564 66" preserveAspectRatio="none">
+                  <path d="M2 27v12 M12 17v32 M22 4v58 M32 13.5v39 M42 20v26 M52 23.5v19 M62 24v18 M72 21.5v23
+                    M82 16v34 M92 7.5v51 M102 21.5v23 M112 7v52 M122 15v36 M132 20v26 M142 22v22 M152 21v24
+                    M162 17v32 M172 10v46 M182 25.5v15 M192 12.5v41 M202 22v22 M212 3v60 M222 6.5v53 M232 7v52
+                    M242 4.5v57 M252 24.5v17 M262 16v34 M272 4.5v57 M282 15.5v35 M292 23.5v19 M302 3v60 M312 5v56
+                    M322 4v58 M332 25.5v15 M342 18.5v29 M352 8.5v49 M362 21v24 M372 5v56 M382 11.5v43 M392 15v36
+                    M402 15.5v35 M412 13v40 M422 7.5v51 M432 24.5v17 M442 13v40 M452 24v18 M462 6.5v53 M472 11.5v43
+                    M482 13.5v39 M492 12.5v41 M502 8.5v49 M512 27v12 M522 17v32 M532 4v58 M542 13.5v39 M552 20v26
+                    M562 23.5v19" />
+                </svg>
+              </div>
             </div>
-          </figure>
+            <p class="sound-quiz__status" role="status" data-sound-status></p>
+            <ol class="sound-quiz__options" role="list" aria-label="소리 퀴즈 선택지">
+              <li><button class="sound-quiz__option" type="button" aria-pressed="false">① 대형 커피머신이 주문을 처리하는 소리</button></li>
+              <li><button class="sound-quiz__option" type="button" aria-pressed="false">② 전력기기 조립·검사설비와 물류로봇이 움직이는 소리</button></li>
+              <li><button class="sound-quiz__option" type="button" aria-pressed="false">③ 볼트가 번개를 충전하는 소리</button></li>
+              <li><button class="sound-quiz__option" type="button" aria-pressed="false">④ 에코의 배꼽시계</button></li>
+            </ol>
+            <p class="sound-quiz__answer" role="status" data-sound-result="정답 : ② 이 소리는 생산설비와 물류로봇이 각자의 공정을 수행하는 작동음입니다."></p>
+          </section>
 
           <figure class="article-prose article-photo article-photo--wide">
             <img src="./assets/articles/sub6/pocket.webp" width="1240" height="645" alt="작업복 주머니에서 공장을 살피는 작은 히어로즈" loading="lazy" />
@@ -245,10 +279,20 @@
               </article>
             </div>
           </div>
-          <a class="article-top" href="#article-top" aria-label="맨 위로 이동"><span aria-hidden="true">⌃</span></a>
         </section>
       </article>
+      <div class="article-tooltip" id="term-mccb" role="tooltip" hidden>MCCB(Molded Case Circuit Breaker)는 배선용차단기다. 과전류나 단락이 발생하면 회로를 끊어 배선과 전기설비를 보호한다.</div>
+      <div class="article-tooltip" id="term-acb" role="tooltip" hidden>ACB(Air Circuit Breaker)는 기중차단기다. 공기 중에서 아크를 소호해 전류를 끊으며, 저압 배전설비에서 회로를 보호한다.</div>
+      <div class="article-tooltip" id="term-vcb" role="tooltip" hidden>VCB(Vacuum Circuit Breaker)는 진공차단기다. 진공에서 아크를 소호해 고압 배전선로에 흐르는 이상 전류를 차단한다.</div>
+      <div class="article-tooltip" id="term-switchboard" role="tooltip" hidden>수배전반은 외부에서 전기를 받아 필요한 곳으로 나눠 보내는 설비다. 전력 상태를 감시하고, 이상이 생기면 차단기로 회로를 보호한다.</div>
+      <div class="article-tooltip" id="term-transformer" role="tooltip" hidden>몰드변압기는 코일을 절연 수지로 감싼 건식 변압기다. 설비에 필요한 전압으로 바꿔주는 역할을 한다.</div>
+      <div class="article-tooltip" id="term-gis" role="tooltip" hidden>GIS(Gas Insulated Switchgear)는 가스절연개폐장치다. 절연가스를 채운 금속 외함 안에서 전력 회로를 열고 닫아 전력계통을 보호한다.</div>
     </main>
+
+    <a class="back-to-top article-top" href="#article-top" aria-label="맨 위로 이동" data-article-top hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V3m-8 8 8-8 8 8" /></svg>
+      <span>TOP</span>
+    </a>
 
     <footer class="site-footer" data-footer>
       <div class="site-footer__top">

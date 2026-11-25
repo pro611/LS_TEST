@@ -12,8 +12,8 @@
     <script src="./js/article-summary.js" defer></script>
   </head>
   <body class="article-page article-page--4">
-    <header class="site-header" data-header>
-      <a class="brand" href="./index.html" aria-label="E.ON 웹진 홈으로 이동">
+    <header class="site-header is-light" data-header>
+      <a class="brand" href="./main2.html" aria-label="E.ON 웹진 메인 2로 이동">
         <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
         <span lang="en">WEBZINE</span>
       </a>
@@ -22,7 +22,7 @@
         <span></span>
       </button>
       <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
-        <a href="./main2.html#theme">Theme. On</a>
+        <a href="./arc.html">Theme. On</a>
         <a href="./main2.html#company">Company. On</a>
         <a href="./main2.html#culture">Culture. On</a>
         <a href="./main2.html#news">LS NEWS+</a>
@@ -87,25 +87,28 @@
           </div>
         </section>
 
-        <section class="team-character">
+        <section class="team-character" aria-labelledby="team-character-heading">
           <div class="article-prose team-character__intro">
             <p>경영분석팀은 재무 분석을 통해 과거를 진단하고, 미래를 설계하는 부서이다. 국제 정세가 요동치는 지금, 경영분석팀이 만들어 낼 재무 데이터의 역할은 매우 중요하다. 회사의 손익을 극대화하기 위해 자료를 분석하고 예산을 관리하며 미래를 계획하고 있는 경영분석팀에 대해 알아보자.</p>
           </div>
-          <figure class="article-art team-character__stage">
-            <picture>
-              <source media="(max-width: 700px)" srcset="./assets/articles/sub4/owl-mobile.webp" />
-              <img src="./assets/articles/sub4/owl.webp" width="1920" height="1512" alt="경영분석팀의 마스코트, 계산기와 자료를 든 올빼미" loading="lazy" />
-            </picture>
-          </figure>
-          <div class="article-prose team-character__description">
-            <p>경영분석팀은 불확실한 상황 속에서 수많은 재무 데이터를 분석해 현재를 진단하고 미래의 방향을 제시하는 역할을 합니다.</p>
-            <p>AI는 이러한 모습이 어둠 속에서도 사물을 정확히 꿰뚫어 보는 올빼미와 닮아 있다고 합니다.</p>
-            <p>넓은 시야로 전체적인 흐름을 읽고 중요한 순간에 핵심적인 판단을 내린다는 공통점도 있습니다.</p>
-            <p>‘조용한 전략가’인 올빼미와 경영분석팀, 닮은 것 같나요?조용히 흐름을 읽고 조직의 방향을 설계하는 팀, 경영분석팀입니다.</p>
+          <div class="team-character__stage">
+            <img class="team-character__backdrop" src="./assets/articles/sub4/quiet-strategist-background.png" width="1943" height="635" alt="" aria-hidden="true" />
+            <h2 id="team-character-heading"><img src="./assets/articles/sub4/business-analysis.png" width="748" height="309" alt="BUSINESS ANALYSIS" /></h2>
+            <img class="team-character__owl" src="./assets/articles/sub4/owl-animation.gif" width="1155" height="900" alt="재무 자료와 태블릿을 든 경영분석팀 올빼미 캐릭터" loading="lazy" />
+            <img class="team-character__profile" src="./assets/articles/sub4/team-profile.png" width="419" height="647" alt="경영분석팀. 팀원 9명, 근무 위치 GRC. 주요 업무는 경영계획 수립, 손익추정, 경비·투자 예산 관리, 관리회계, EPP, IR. 팀원들이 자주 하는 말은 점심, 커피, 산책." />
           </div>
-          <figure class="article-art team-character__ticker">
-            <img src="./assets/articles/sub4/ticker.webp" width="1920" height="70" alt="재무분석, 손익추정, 관리회계, 예산, 완벽추구, 다분함, 판단력, 주관력" loading="lazy" />
-          </figure>
+          <div class="team-character__description">
+            <h3><img src="./assets/articles/sub4/quiet-strategist.png" width="305" height="137" alt="조용한 전략가 올빼미" /></h3>
+            <p>
+              경영분석팀은 불확실한 상황 속에서 수많은 재무 데이터를 분석해 현재를 진단하고 미래의 방향을 제시하는 역할을 합니다.<br />
+              AI는 이러한 모습이 어둠 속에서도 사물을 정확히 꿰뚫어 보는 올빼미와 닮아 있다고 합니다.<br />
+              넓은 시야로 전체적인 흐름을 읽고 중요한 순간에 핵심적인 판단을 내린다는 공통점도 있습니다.<br />
+              ‘조용한 전략가’인 올빼미와 경영분석팀, 닮은 것 같나요? 조용히 흐름을 읽고 조직의 방향을 설계하는 팀, 경영분석팀입니다.
+            </p>
+          </div>
+          <div class="team-character__ticker">
+            <img src="./assets/articles/sub4/ticker-animation.gif" width="1925" height="105" alt="#재무분석 #손익추정 #관리회계 #예산 #완벽추구 #차분함 #판단력 #주관력" loading="lazy" />
+          </div>
         </section>
 
         <section class="team-interview article-wide">
@@ -194,10 +197,14 @@
               </article>
             </div>
           </div>
-          <a class="article-top" href="#article-top" aria-label="맨 위로 이동"><span aria-hidden="true">⌃</span></a>
         </section>
       </article>
     </main>
+
+    <a class="back-to-top article-top" href="#article-top" aria-label="맨 위로 이동" data-article-top hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V3m-8 8 8-8 8 8" /></svg>
+      <span>TOP</span>
+    </a>
 
     <footer class="site-footer" data-footer>
       <div class="site-footer__top">

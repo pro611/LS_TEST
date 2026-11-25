@@ -12,8 +12,8 @@
     <script src="./js/article-summary.js" defer></script>
   </head>
   <body class="article-page article-page--3">
-    <header class="site-header" data-header>
-      <a class="brand" href="./index.html" aria-label="E.ON 웹진 홈으로 이동">
+    <header class="site-header is-light" data-header>
+      <a class="brand" href="./main2.html" aria-label="E.ON 웹진 메인 2로 이동">
         <img src="./assets/eon-logo.png" alt="" width="480" height="186" />
         <span lang="en">WEBZINE</span>
       </a>
@@ -22,7 +22,7 @@
         <span></span>
       </button>
       <nav class="primary-nav" id="primary-navigation" aria-label="주요 메뉴" data-menu>
-        <a href="./main2.html#theme">Theme. On</a>
+        <a href="./arc.html">Theme. On</a>
         <a href="./main2.html#company">Company. On</a>
         <a href="./main2.html#culture">Culture. On</a>
         <a href="./main2.html#news">LS NEWS+</a>
@@ -57,7 +57,7 @@
 
     <main id="article-top">
       <article aria-labelledby="article-title">
-        <section class="article-hero article-hero--feature" aria-labelledby="article-title">
+        <section class="article-hero article-hero--feature article-hero--visionary" aria-labelledby="article-title">
           <img class="article-hero__image" src="./assets/articles/sub3/hero.webp" width="1920" height="902" alt="노출 콘크리트 건축 공간을 채운 금속 구체와 위에서 들어오는 자연광" fetchpriority="high" />
           <div class="article-hero__inner">
             <div class="article-hero__eyebrow"><span>1%의 힘</span><span>Theme. On</span></div>
@@ -87,24 +87,32 @@
           </div>
         </section>
 
-        <figure class="article-art visionary-intro">
-          <picture>
-            <source media="(max-width: 700px)" srcset="./assets/articles/sub3/opening-mobile.webp" />
-            <img src="./assets/articles/sub3/opening.webp" width="1920" height="1342" alt="검은 배경과 금속 구체 위로 안목과 관찰에 관한 글이 이어집니다." loading="lazy" />
-          </picture>
-          <div class="article-transcript">
-            <h3>경험과 관찰의 축적, 안목으로 자라다</h3>
-            <p>AI는 이제 몇 초 만에 문장을 쓰고, 이미지를 만들고, 수십 개의 아이디어를 제안한다. 한때는 ‘무엇을 만들어낼 수 있는가’가 실력의 차이를 만들었다면, 이제는 누구나 빠르게 많은 결과물을 얻을 수 있는 시대가 됐다. 문제는 그 다음이다. 그럴듯한 수많은 답 가운데 무엇을 선택할 것인가. 이때 발휘될 인간만의 능력! 바로 ‘안목’이다.</p>
-            <p>안목은 타고난 감각이나 취향만을 뜻하지 않는다. 오래 보고, 비교하고, 실패하고, 다시 선택하는 과정에서 쌓이는 판단의 힘이다. 좋은 건축가는 빈 공간에서 빛의 가능성을 보고, 뛰어난 기획자는 오래된 사물에서 새로운 쓰임을 발견하며, 좋은 리더는 아직 성과로 증명되지 않은 사람에게서 다음 가능성을 읽어낸다.</p>
-            <p>겉으로는 직감처럼 보이지만 그 안에는</p>
-            <p>수많은 경험과 관찰이 축적돼 있다.</p>
-            <p>말로 모두 설명하기 어렵지만 결정적인 순간에</p>
-            <p>작동하는 일종의 암묵지인 셈이다.</p>
-            <p>AI는 과거의 방대한 데이터를 바탕으로 가능한 답을 빠르게 펼쳐놓는 데 탁월하다. 그러나 무엇이 지금 이 상황에 더 적합한지, 무엇이 오래 살아남을지, 어디에 아직 이름 붙지 않은 가치가 숨어 있는지를 판단하는 일은 여전히 인간의 몫으로 남는다. 오히려 선택지가 많아질수록 좋은 것을 알아보는 눈의 가치는 더 커진다. 결국 AI 시대의 한 끗은 더 많이 만들어내는 능력보다 중요한 것은 단 하나!</p>
-            <p>무엇을 볼 줄 아는가</p>
-            <p>모두가 같은 것을 보고도 누군가는 지나치고, 누군가는 그 안에서 새로운 가능성을 발견한다. 마스터피스는 그렇게 시작된다. 이미 존재하지만 아직 아무도 중요하게 보지 않았던 것을 먼저 알아보는 눈, 그것이 지금 우리가 다시 ‘안목’을 이야기해야 하는 이유다.</p>
+        <div class="visionary-story">
+          <div class="visionary-intro">
+            <picture class="visionary-intro__animation" aria-hidden="true">
+              <source media="(prefers-reduced-motion: reduce)" srcset="./assets/articles/sub3/intro-spheres-still.webp" />
+              <img src="./assets/articles/sub3/intro-spheres.gif" width="960" height="640" alt="" />
+            </picture>
+            <div class="visionary-story__prose">
+              <p class="visionary-intro__copy">AI는 이제 몇 초 만에 문장을 쓰고, 이미지를 만들고, 수십 개의 아이디어를 제안한다. 한때는 ‘무엇을 만들어낼 수 있는가’가 실력의 차이를 만들었다면, 이제는 누구나 빠르게 많은 결과물을 얻을 수 있는 시대가 됐다. 문제는 그 다음이다. 그럴듯한 수많은 답 가운데 무엇을 선택할 것인가. 이때 발휘될 인간만의 능력! 바로 ‘안목’이다.</p>
+            </div>
           </div>
-        </figure>
+          <section class="visionary-story__chapter visionary-story__prose" aria-labelledby="visionary-experience-heading">
+            <img class="visionary-object visionary-object--small" src="./assets/articles/sub3/intro-small-ring.png" width="138" height="131" alt="" loading="lazy" />
+            <h2 id="visionary-experience-heading">경험과 관찰의 축적,<br />안목으로 자라다</h2>
+            <p>안목은 타고난 감각이나 취향만을 뜻하지 않는다. 오래 보고, 비교하고, 실패하고, 다시 선택하는 과정에서 쌓이는 판단의 힘이다. 좋은 건축가는 빈 공간에서 빛의 가능성을 보고, 뛰어난 기획자는 오래된 사물에서 새로운 쓰임을 발견하며, 좋은 리더는 아직 성과로 증명되지 않은 사람에게서 다음 가능성을 읽어낸다.</p>
+            <img class="visionary-object visionary-object--dots" src="./assets/articles/sub3/intro-dots.png" width="267" height="267" alt="" loading="lazy" />
+            <figure class="visionary-story__quote">
+              <img src="./assets/articles/sub3/intro-quote.png" width="558" height="175" alt="겉으로는 직감처럼 보이지만 그 안에는 수많은 경험과 관찰이 축적돼 있다. 말로 모두 설명하기 어렵지만 결정적인 순간에 작동하는 일종의 암묵지인 셈이다." loading="lazy" />
+            </figure>
+            <p>AI는 과거의 방대한 데이터를 바탕으로 가능한 답을 빠르게 펼쳐놓는 데 탁월하다. 그러나 무엇이 지금 이 상황에 더 적합한지, 무엇이 오래 살아남을지, 어디에 아직 이름 붙지 않은 가치가 숨어 있는지를 판단하는 일은 여전히 인간의 몫으로 남는다. 오히려 선택지가 많아질수록 좋은 것을 알아보는 눈의 가치는 더 커진다. 결국 AI 시대의 한 끗은 더 많이 만들어내는 능력보다 중요한 것은 단 하나!</p>
+          </section>
+          <section class="visionary-story__chapter visionary-story__chapter--last visionary-story__prose" aria-labelledby="visionary-perspective-heading">
+            <img class="visionary-object visionary-object--ring" src="./assets/articles/sub3/intro-ring.png" width="177" height="185" alt="" loading="lazy" />
+            <h2 id="visionary-perspective-heading">무엇을 볼 줄 아는가</h2>
+            <p>모두가 같은 것을 보고도 누군가는 지나치고, 누군가는 그 안에서 새로운 가능성을 발견한다. 마스터피스는 그렇게 시작된다. 이미 존재하지만 아직 아무도 중요하게 보지 않았던 것을 먼저 알아보는 눈, 그것이 지금 우리가 다시 ‘안목’을 이야기해야 하는 이유다.</p>
+          </section>
+        </div>
 
         <section class="visionary-cases visionary-cases--ando">
           <div class="visionary-cases__inner">
@@ -233,10 +241,14 @@
               </article>
             </div>
           </div>
-          <a class="article-top" href="#article-top" aria-label="맨 위로 이동"><span aria-hidden="true">⌃</span></a>
         </section>
       </article>
     </main>
+
+    <a class="back-to-top article-top" href="#article-top" aria-label="맨 위로 이동" data-article-top hidden>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21V3m-8 8 8-8 8 8" /></svg>
+      <span>TOP</span>
+    </a>
 
     <footer class="site-footer" data-footer>
       <div class="site-footer__top">

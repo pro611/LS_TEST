@@ -45,4 +45,23 @@
     if (eventPopup.open) return;
     eventReturnFocus?.focus({ preventScroll: true });
   });
+
+  const topLink = document.querySelector("[data-article-top]");
+  if (!topLink) return;
+
+  const header = document.querySelector("[data-header]");
+  const footer = document.querySelector("[data-footer]");
+
+  function updateArticleNavigation() {
+    header.classList.toggle("is-scrolled", window.scrollY > 10);
+    topLink.hidden = window.scrollY < window.innerHeight * 0.4;
+
+    const footerVisible = Math.max(0, window.innerHeight - footer.getBoundingClientRect().top);
+    topLink.style.setProperty("--footer-clearance", `${footerVisible ? footerVisible + 24 : 0}px`);
+  }
+
+  window.addEventListener("scroll", updateArticleNavigation, { passive: true });
+  window.addEventListener("resize", updateArticleNavigation);
+  window.addEventListener("pageshow", updateArticleNavigation);
+  updateArticleNavigation();
 })();
