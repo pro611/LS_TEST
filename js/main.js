@@ -27,32 +27,7 @@ document.addEventListener("keydown", (event) => {
 
 const eventPopup = document.querySelector("[data-event-popup]");
 const eventOpeners = document.querySelectorAll("[data-event-open]");
-const pollChoices = [...eventPopup.querySelectorAll("[data-poll-choice]")];
-const pollCounts = [...eventPopup.querySelectorAll("[data-poll-count]")];
-const pollGauge = eventPopup.querySelector("[data-poll-gauge]");
-let pollFrame = 0;
 let eventReturnFocus;
-
-function animatePoll() {
-  cancelAnimationFrame(pollFrame);
-  const informalPercent = Number(eventPopup.querySelector("[data-poll-informal]").dataset.pollCount);
-  const start = performance.now() + (reduceMotion.matches ? 0 : 200);
-  const duration = reduceMotion.matches ? 0 : 1400;
-  pollCounts.forEach((count) => { count.textContent = "0"; });
-  pollGauge.style.clipPath = "inset(0 100% 0 0)";
-
-  function draw(time) {
-    const progress = duration ? Math.max(0, Math.min(1, (time - start) / duration)) : 1;
-    const eased = 1 - (1 - progress) ** 3;
-    pollCounts.forEach((count) => {
-      count.textContent = String(Math.round(Number(count.dataset.pollCount) * eased));
-    });
-    pollGauge.style.clipPath = `inset(0 ${100 - informalPercent * eased}% 0 0)`;
-    pollFrame = progress < 1 && eventPopup.open ? requestAnimationFrame(draw) : 0;
-  }
-
-  pollFrame = requestAnimationFrame(draw);
-}
 
 eventOpeners.forEach((opener) => {
   opener.addEventListener("click", (event) => {
@@ -60,7 +35,6 @@ eventOpeners.forEach((opener) => {
     if (eventPopup.open) return;
     eventReturnFocus = menu.contains(opener) && menuToggle.getClientRects().length ? menuToggle : opener;
     eventPopup.showModal();
-    animatePoll();
   });
 });
 
@@ -72,18 +46,7 @@ eventPopup.addEventListener("click", (event) => {
 
 eventPopup.addEventListener("close", () => {
   if (eventPopup.open) return;
-  cancelAnimationFrame(pollFrame);
   eventReturnFocus?.focus({ preventScroll: true });
-});
-
-pollChoices.forEach((choice) => {
-  choice.addEventListener("click", () => {
-    pollChoices.forEach((item) => {
-      const selected = item === choice;
-      item.classList.toggle("is-selected", selected);
-      item.setAttribute("aria-pressed", String(selected));
-    });
-  });
 });
 
 const sequence = document.querySelector("[data-scroll-sequence]");

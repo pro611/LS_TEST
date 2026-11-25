@@ -57,35 +57,11 @@
     <button class="event-tab event-tab--trigger" type="button" aria-label="이벤트 열기" aria-haspopup="dialog" aria-controls="event-popup" data-event-open><span>EVENT</span></button>
     <dialog class="event-dialog" id="event-popup" aria-labelledby="event-popup-title" data-event-popup>
       <div class="event-drawer">
-        <section class="event-panel" aria-labelledby="event-popup-title">
-          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus>
-            <span></span>
-            <span></span>
-          </button>
+        <div class="event-panel">
           <h2 class="visually-hidden" id="event-popup-title">AI 동료 밸런스</h2>
-          <p class="visually-hidden">AI에게 말할 때, 나는? 반말파 VS 존댓말파</p>
-          <div class="event-poll__choices" role="group" aria-label="말투 선택">
-            <button class="event-poll__choice" type="button" aria-pressed="false" data-poll-choice>
-              <span class="event-poll__badge">A. 반말파</span>
-              <strong>“이거 세 줄로 정리해줘.”</strong>
-              <span class="event-poll__description">친해졌는데 굳이 존댓말까지?</span>
-            </button>
-            <button class="event-poll__choice" type="button" aria-pressed="false" data-poll-choice>
-              <span class="event-poll__badge event-poll__badge--formal">B. 존댓말파</span>
-              <strong>“이거 세 줄로 정리해 주세요.”</strong>
-              <span class="event-poll__description">AI한테도 예의를 지키는 편이에요.</span>
-            </button>
-          </div>
-          <div class="event-poll__results" aria-label="반말 47퍼센트, 존댓말 53퍼센트. 1,286명 참여 중">
-            <div class="event-poll__result-header" aria-hidden="true">
-              <div class="event-poll__side"><span>반말</span><span class="event-poll__percentage"><span data-poll-count="47" data-poll-informal>0</span>%</span></div>
-              <span class="event-poll__vs">VS</span>
-              <div class="event-poll__side event-poll__side--formal"><span>존댓말</span><span class="event-poll__percentage"><span data-poll-count="53">0</span>%</span></div>
-            </div>
-            <div class="event-poll__gauge" aria-hidden="true"><div class="event-poll__gauge-fill" data-poll-gauge></div></div>
-            <p class="event-poll__participants"><svg viewBox="0 0 20 20" aria-hidden="true"><circle cx="10" cy="5" r="4" /><path d="M2 18v-3a8 8 0 0 1 16 0v3c-4 2-12 2-16 0" /></svg><span>1,286명 참여 중</span></p>
-          </div>
-        </section>
+          <img class="event-panel__image" src="./assets/event-preview.png" width="1593" height="1622" alt="AI에게 말할 때, 나는? 반말파 대 존댓말파. 시안에 표시된 결과는 47% 대 53%이며 참여 인원은 1,286명입니다." />
+          <button class="event-panel__close" type="button" aria-label="이벤트 닫기" data-event-close autofocus></button>
+        </div>
         <button class="event-tab" type="button" aria-label="이벤트 닫기" data-event-close><span>EVENT</span></button>
       </div>
     </dialog>

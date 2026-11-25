@@ -773,7 +773,7 @@ html:has(.event-dialog[open]) {
 }
 
 .event-drawer {
-  --event-width: min(796px, calc(100vw - var(--event-tab-width)), calc((100svh - var(--event-top) - 16px) * 796 / 811));
+  --event-width: min(796px, calc(100vw - var(--event-tab-width)), calc((100svh - var(--event-top) - 16px) * 1593 / 1622));
   position: absolute;
   top: var(--event-top);
   left: 0;
@@ -795,56 +795,28 @@ html:has(.event-dialog[open]) {
 .event-panel {
   position: relative;
   width: var(--event-width);
-  aspect-ratio: 796 / 811;
-  container-type: inline-size;
   overflow: clip;
-  border-radius: 0 0 18px 0;
-  background: #effaff url("../assets/event-preview.png") center / 100% 100% no-repeat;
+  border-radius: 0 0 2.5% 0;
   box-shadow: 14px 18px 45px rgba(0, 0, 0, 0.2);
 }
 
-.event-poll__choices { position: absolute; top: 48.21%; left: 5.4%; right: 5%; height: 23.06%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 2.3cqw; }
-.event-poll__choice { display: flex; flex-direction: column; align-items: center; justify-content: center; color: #000; background: #fff; border-radius: 2.2cqw; transition: background-color 220ms ease; }
-.event-poll__choice.is-selected { background: #afdafe; }
-.event-poll__choice:focus-visible { outline: 2px solid #008fff; outline-offset: -4px; }
-.event-poll__badge { display: grid; place-items: center; width: 22.36cqw; min-height: 6.15cqw; margin-bottom: 2.3cqw; border-radius: 10cqw; background: #008fff; color: #fff; font-size: 3.8cqw; font-weight: 800; letter-spacing: -0.06em; }
-.event-poll__badge--formal { background: #102f86; }
-.event-poll__choice strong { font-size: 2.65cqw; font-weight: 700; line-height: 1.35; letter-spacing: -0.05em; }
-.event-poll__description { margin-top: 0.9cqw; font-size: 2.15cqw; line-height: 1.35; letter-spacing: -0.06em; }
-.event-poll__results { position: absolute; top: 75.3%; left: 12.4%; right: 12.4%; color: #000; }
-.event-poll__result-header { display: grid; grid-template-columns: 1fr 0.24fr 1fr; align-items: end; }
-.event-poll__side { display: flex; flex-direction: column; align-items: center; gap: 0.35cqw; color: #008fff; font-size: 2.75cqw; line-height: 1.2; }
-.event-poll__side--formal { color: #102f86; }
-.event-poll__percentage { font-size: 6.8cqw; font-weight: 700; line-height: 1.05; }
-.event-poll__vs { padding-bottom: 0.2cqw; text-align: center; font-size: 3.5cqw; font-weight: 600; line-height: 1.15; }
-.event-poll__gauge { height: 3cqw; margin-top: 1cqw; overflow: clip; border-radius: 10cqw; background: #102f86; }
-.event-poll__gauge-fill { width: 100%; height: 100%; background: #008fff; clip-path: inset(0 100% 0 0); }
-.event-poll__participants { display: flex; align-items: center; justify-content: center; gap: 0.75cqw; margin: 3.5cqw 0 0; font-size: 2.2cqw; line-height: 1.3; letter-spacing: -0.035em; }
-.event-poll__participants svg { width: 2.2cqw; height: 2.2cqw; fill: #e50019; }
+.event-panel__image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
+/* 이미지에 포함된 닫기 표시 위에 버튼의 클릭 영역을 맞춥니다. */
 .event-panel__close {
   position: absolute;
-  top: 3.5cqw;
-  right: 3.5cqw;
-  width: max(34px, 4.5cqw);
-  height: max(34px, 4.5cqw);
+  inset: 0 0 auto auto;
+  width: max(44px, 11.2%);
+  height: max(44px, 11.4%);
 }
 
-.event-panel__close span {
-  position: absolute;
-  top: 50%;
-  left: 20%;
-  width: 60%;
-  height: 2px;
-  background: #fff;
-}
-
-.event-panel__close span:first-child {
-  transform: rotate(45deg);
-}
-
-.event-panel__close span:last-child {
-  transform: rotate(-45deg);
+.event-panel__close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -4px;
 }
 
 .event-tab {
@@ -856,6 +828,10 @@ html:has(.event-dialog[open]) {
   color: #fff;
   background: #2879c5;
   box-shadow: 6px 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+.event-drawer .event-tab {
+  background: var(--thumbnail-blue);
 }
 
 .event-tab--trigger {
